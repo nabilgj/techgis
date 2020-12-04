@@ -4,7 +4,8 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 let teamData = [
   {
     images: "01",
-    title: "Dr Yarjan Abdul Samad",
+    name: "Brigadier(Retd) Sajjad Sardar ",
+    title: "Core Member",
     designation: "Space Scientist",
     socialNetwork: [
       {
@@ -23,8 +24,10 @@ let teamData = [
   },
   {
     images: "02",
-    title: "Dr Syed Ali Raza",
-    designation: "Expertise in Artificial Intelligence",
+    name: "Syed Wajahat Hussain",
+    title: "Core Member",
+    designation:
+      "An engineer with experience of over thirty years in Product Development, International Trade",
     socialNetwork: [
       {
         icon: <FaFacebookF />,
@@ -38,8 +41,10 @@ let teamData = [
   },
   {
     images: "03",
-    title: "Dr Jamil H Kazmi",
-    designation: "Meritorious Professor and a seasoned Geographe",
+    name: "Dr Akhtar Hussain",
+    title: "Core Member",
+    designation:
+      "Over twenty five years of experience in Software Suite development as well as Geographic Information System.",
     socialNetwork: [
       {
         icon: <FaFacebookF />,
@@ -57,9 +62,10 @@ let teamData = [
   },
   {
     images: "04",
-    title: "Syed Wajahat Hussain",
+    name: "Syed Muhammad Abbas",
+    title: "Core Member",
     designation:
-      "An engineer with experience of over thirty years in Product Development",
+      "A business executive with experience in Economics and Business Management having expertise in Business Mapping and Ergonomics",
     socialNetwork: [
       {
         icon: <FaFacebookF />,

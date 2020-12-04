@@ -110,9 +110,9 @@ export const ContactUs = [
     textPosition: "text-center",
     category: "",
     title: "Tech-GIS",
-    description: "Geo-Spatial Technology",
-    buttonText: "Contact Us",
-    buttonLink: "/contact",
+    description: "Expert in Geo-Spatial Technology",
+    buttonText: "Check us out",
+    buttonLink: "/service",
     color: "#2DAAC2",
   },
 ];

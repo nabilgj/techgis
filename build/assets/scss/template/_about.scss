@@ -134,7 +134,8 @@
     p {
       &.description {
         font-weight: 300;
-        color: #717173;
+        color: black !important;
+        // color: #717173;
         a {
           color: rgba(29, 29, 36, 1);
           &:hover {

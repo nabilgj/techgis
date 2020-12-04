@@ -183,18 +183,11 @@ class Home extends Component {
                           <div className="slide-btn">
                             <Link
                               className="rn-button-style--2 btn-primary-color"
-                              to="/contact"
+                              to={`${value.buttonLink}`}
                               // href={`${value.buttonLink}`}
                             >
                               {value.buttonText}
                             </Link>
-                            {/* <a
-                              className="rn-button-style--2 btn-primary-color"
-                              href="/contact"
-                              // href={`${value.buttonLink}`}
-                            >
-                              {value.buttonText}
-                            </a> */}
                           </div>
                         ) : (
                           ""
@@ -225,12 +218,12 @@ class Home extends Component {
                     hands together to form a merger which resulted in the
                     formation of TechGIS.
                   </p>
-                  <a
+                  <Link
                     className="rn-button-style--2 btn-primary-color-history"
-                    href="/about"
+                    to="/about"
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

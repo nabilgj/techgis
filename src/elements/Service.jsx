@@ -12,6 +12,7 @@ import ScrollToTop from "react-scroll-up";
 import Testimonial from "../elements/Testimonial";
 
 import Footer from "../component/footer/Footer";
+import FooterTwo from "../component/footer/FooterTwo";
 
 import { Link } from "react-router-dom";
 
@@ -87,18 +88,22 @@ class Service extends Component {
           <div className="header-wrapper" id="header-wrapper">
             <div className="header-left">
               <div className="logo">
-                <a href="/">
-                  <img
-                    className="logo-1"
-                    src="/assets/images/logo/logo-light.png"
-                    alt="Logo Images"
-                  />
-                  <img
-                    className="logo-2"
-                    src="/assets/images/logo/logo-all-dark.png"
-                    alt="Logo Images"
-                  />
-                </a>
+                <Link to="/">
+                  <p
+                    style={{
+                      color: "white",
+                    }}
+                  >
+                    Tech-
+                    <span
+                      style={{
+                        color: "#2DAAC2",
+                      }}
+                    >
+                      GIS
+                    </span>
+                  </p>
+                </Link>
               </div>
             </div>
             <div className="header-right">
@@ -201,7 +206,9 @@ class Service extends Component {
         </div>
         {/* End Back To Top */}
 
-        <Footer />
+        {/* Start Footer */}
+        <FooterTwo />
+        {/* End Footer */}
       </React.Fragment>
     );
   }

@@ -182,7 +182,7 @@ class Testimonial extends Component {
                   <div className="testimonial-thumbnai">
                     <div className="thumb">
                       <img
-                        src="/assets/images/client/testimonial-3.jpg"
+                        src="/assets/images/client/testimonial-1.jpg"
                         alt="Testimonial Images"
                       />
                     </div>
@@ -193,7 +193,7 @@ class Testimonial extends Component {
                   <div className="testimonial-thumbnai">
                     <div className="thumb">
                       <img
-                        src="/assets/images/client/testimonial-4.jpg"
+                        src="/assets/images/client/testimonial-2.jpg"
                         alt="Testimonial Images"
                       />
                     </div>
@@ -204,7 +204,7 @@ class Testimonial extends Component {
                   <div className="testimonial-thumbnai">
                     <div className="thumb">
                       <img
-                        src="/assets/images/client/testimonial-5.jpg"
+                        src="/assets/images/client/testimonial-1.jpg"
                         alt="Testimonial Images"
                       />
                     </div>
@@ -215,7 +215,7 @@ class Testimonial extends Component {
                   <div className="testimonial-thumbnai">
                     <div className="thumb">
                       <img
-                        src="/assets/images/client/testimonial-6.jpg"
+                        src="/assets/images/client/testimonial-2.jpg"
                         alt="Testimonial Images"
                       />
                     </div>
@@ -226,7 +226,7 @@ class Testimonial extends Component {
                   <div className="testimonial-thumbnai">
                     <div className="thumb">
                       <img
-                        src="/assets/images/client/testimonial-7.jpg"
+                        src="/assets/images/client/testimonial-1.jpg"
                         alt="Testimonial Images"
                       />
                     </div>

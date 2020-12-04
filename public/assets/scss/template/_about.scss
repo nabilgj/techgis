@@ -34,7 +34,8 @@
     }
     .content-wrapper {
       .content {
-        background: #272527;
+        background: black;
+        // background: #272527;
         padding: 120px 100px;
         position: relative;
         z-index: 2;
@@ -134,7 +135,8 @@
     p {
       &.description {
         font-weight: 300;
-        color: #717173;
+        color: black;
+        // color: #717173;
         a {
           color: rgba(29, 29, 36, 1);
           &:hover {

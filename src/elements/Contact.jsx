@@ -8,6 +8,7 @@ import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
+import FooterTwo from "../component/footer/FooterTwo";
 
 import { Link } from "react-router-dom";
 
@@ -49,18 +50,22 @@ class Contact extends Component {
           <div className="header-wrapper" id="header-wrapper">
             <div className="header-left">
               <div className="logo">
-                <a href="/">
-                  <img
-                    className="logo-1"
-                    src="/assets/images/logo/logo-light.png"
-                    alt="Logo Images"
-                  />
-                  <img
-                    className="logo-2"
-                    src="/assets/images/logo/logo-all-dark.png"
-                    alt="Logo Images"
-                  />
-                </a>
+                <Link to="/">
+                  <p
+                    style={{
+                      color: "white",
+                    }}
+                  >
+                    Tech-
+                    <span
+                      style={{
+                        color: "#2DAAC2",
+                      }}
+                    >
+                      GIS
+                    </span>
+                  </p>
+                </Link>
               </div>
             </div>
             <div className="header-right">
@@ -111,11 +116,8 @@ class Contact extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h2 className="title theme-gradient">Cntact With Us</h2>
-                  <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random
-                    text.{" "}
-                  </p>
+                  <h2 className="title theme-gradient">Lets Know Each Other</h2>
+                  {/* <p>some text here</p> */}
                 </div>
               </div>
             </div>
@@ -134,12 +136,15 @@ class Contact extends Component {
                     <FiHeadphones />
                   </div>
                   <div className="inner">
-                    <h4 className="title">Contact With Phone Number</h4>
+                    <h4 className="title"> Phone Numbers </h4>
+                    <p> Brigadier(Retd) Sajjad Sardar </p>
                     <p>
-                      <a href="tel:+057 254 365 456">+057 254 365 456</a>
+                      <Link to="tel:+92512829601"> +92 51 2829601 </Link>
                     </p>
+                    <br />
                     <p>
-                      <a href="tel:+856 325 652 984">+856 325 652 984</a>
+                      <p> Syed Wajahat Hussain </p>
+                      <Link to="tel:+922134992083"> +92 21 34992083 </Link>
                     </p>
                   </div>
                 </div>
@@ -155,10 +160,10 @@ class Contact extends Component {
                   <div className="inner">
                     <h4 className="title">Email Address</h4>
                     <p>
-                      <a href="mailto:admin@gmail.com">admin@gmail.com</a>
+                      <a href="mailto:ceo@tech-gis.com">ceo@tech-gis.com</a>
                     </p>
                     <p>
-                      <a href="mailto:example@gmail.com">example@gmail.com</a>
+                      <a href="mailto:info@tech-gis.com">info@tech-gis.com</a>
                     </p>
                   </div>
                 </div>
@@ -172,11 +177,15 @@ class Contact extends Component {
                     <FiMapPin />
                   </div>
                   <div className="inner">
-                    <h4 className="title">Location</h4>
+                    <h4 className="title">Address</h4> <br />
+                    <h5>Islamabad</h5>
                     <p>
-                      5678 Bangla Main Road, cities 580 <br /> GBnagla, example
-                      54786
+                      Office no 6 Mezzanine floor,Muhammadi Plaza, Jinnah
+                      Avenue, Blue Area , Islamabad. Pakistan
                     </p>
+                    <br />
+                    <h5> Karachi </h5>
+                    <p>C-20 Block 5 Gulshan-e-Iqbal, Karachi. Pakistan</p>
                   </div>
                 </div>
               </div>
@@ -210,7 +219,7 @@ class Contact extends Component {
         {/* End Contact Map  */}
 
         {/* Start Brand Area */}
-        <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
+        {/* <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -218,7 +227,7 @@ class Contact extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* End Brand Area */}
 
         {/* Start Back To Top */}
@@ -229,7 +238,9 @@ class Contact extends Component {
         </div>
         {/* End Back To Top */}
 
-        <Footer />
+        {/* Start Footer */}
+        <FooterTwo />
+        {/* End Footer */}
       </React.Fragment>
     );
   }
