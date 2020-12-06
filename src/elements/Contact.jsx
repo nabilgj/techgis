@@ -6,8 +6,7 @@ import ContactTwo from "../elements/contact/ContactTwo";
 import BrandTwo from "../elements/BrandTwo";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
-import Header from "../component/header/Header";
-import Footer from "../component/footer/Footer";
+
 import FooterTwo from "../component/footer/FooterTwo";
 
 import { Link } from "react-router-dom";
@@ -80,10 +79,10 @@ class Contact extends Component {
                     <Link to="/"> Home </Link>
                   </li>
                   <li>
-                    <Link to="/service"> Service</Link>
+                    <Link to="/service"> Service </Link>
                   </li>
                   <li>
-                    <Link to="/projects"> Projetc </Link>
+                    <Link to="/projects"> Projects </Link>
                   </li>
                 </Scrollspy>
               </nav>

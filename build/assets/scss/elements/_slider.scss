@@ -574,6 +574,8 @@ Personal Portfolio
 ------------------------------*/
 
 .slider-creative-agency {
+  background-attachment: fixed;
+
   .slider-paralax {
     @media #{$md-layout} {
       height: auto;

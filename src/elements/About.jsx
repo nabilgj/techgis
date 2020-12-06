@@ -19,8 +19,12 @@ import { FiX, FiMenu } from "react-icons/fi";
 
 class About extends Component {
   render() {
-    let description =
+    let history =
       "Tech-GIS founded in 2020, we cater to the technological requirements of the GNSS and geospatial industry. The formation of the company was realized to introduce the latest advancement in geospatial technology in a range of sectors with high standards and economical cost. With an amalgamation of expertise in remote sensing, aerial surveillance, data-management, information & technology, ergonomics and artificial intelligence, we make it happen for you when it comes to geo-spatial services and applications.";
+
+    let story =
+      "Witness to the havoc created by the swarms of Locusts in the year 2019 in more than 20 countries, two companies joined hands together to form a merger which resulted in the formation of TechnoGIS. Our founding directors laid the foundation stone for being the first group to submit a proposal at the national level to fight and manage the locust menace with the help of geo-spatial technology. Amazed by the potential of geo-spatial technology and GIS, our team of technopreneurs soon realized the dream of becoming a true Geo-spatial company with the help of raising our first capital investment in a round born through the support by AZM Group & Bukhari Group. Just inside twelve months, a company with foreign consultants, academia, technopreneurs, research scientists and native talent emerged in the form of TechnoGIS. TechnoGIS now serves wide sectors ranging from Civil & Infrastructure, Mining, Oil & Gas, Utilities, Industry and Agriculture. The tale is unfinished as our team aspires to add to creating value in life through application and services of geo-spatial technology.";
+
     return (
       <React.Fragment>
         <PageHelmet pageTitle="About" />
@@ -58,6 +62,12 @@ class About extends Component {
                 >
                   <li>
                     <Link to="/"> Home </Link>
+                  </li>
+                  <li>
+                    <Link to="/service"> Service </Link>
+                  </li>
+                  <li>
+                    <Link to="/projects"> Projects </Link>
                   </li>
                   <li>
                     <Link to="/contact"> Contact Us </Link>
@@ -104,16 +114,21 @@ class About extends Component {
                 </div> */}
                 <div className="col-lg-12">
                   <div className="about-inner inner">
-                    <div className="section-title">
+                    <div className="section-title text-center service-style--3 mb--30">
                       <h2 className="title"> Our History </h2>
                       <p className="description" style={{ color: "black" }}>
-                        {description}
+                        {history}
+                      </p>
+                      <h2 className="title"> Our Story </h2>
+                      <p className="description" style={{ color: "black" }}>
+                        {story}
                       </p>
                     </div>
+
                     <div className="row mt--30">
                       <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div className="about-us-list">
-                          <h3 className="title">Who we are</h3>
+                          <h3 className="title"> Who we are </h3>
                           <p style={{ color: "black" }}>
                             Our highly qualified executives with profound
                             knowledge of Geo-spatial technology and business
@@ -164,7 +179,7 @@ class About extends Component {
         {/* End CounterUp Area */}
 
         {/* Start Finding Us Area  */}
-        <div className="rn-finding-us-area rn-finding-us bg_color--1">
+        {/* <div className="rn-finding-us-area rn-finding-us bg_color--1">
           <div className="inner">
             <div className="content-wrapper">
               <div className="content">
@@ -179,7 +194,7 @@ class About extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* End Finding Us Area  */}
 
         {/* Start Team Area  */}
@@ -215,11 +230,11 @@ class About extends Component {
         {/* End Team Area  */}
 
         {/* Start Testimonial Area */}
-        <div className="rn-testimonial-area bg_color--5 ptb--120">
+        {/* <div className="rn-testimonial-area bg_color--5 ptb--120">
           <div className="container">
             <Testimonial />
           </div>
-        </div>
+        </div> */}
         {/* End Testimonial Area */}
 
         {/* Start Brand Area */}

@@ -3,6 +3,8 @@ import teamData from "./data";
 
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
+import { Link } from "react-router-dom";
+
 const TeamOne = (props) => {
   const itemSlice = teamData.slice(0, props.item);
   return (
@@ -19,7 +21,7 @@ const TeamOne = (props) => {
             </div>
             <div className="content">
               <h4 className="title">{value.name}</h4>
-              <p className="designation"> {value.title}</p>
+              <p className="designation"> {value.designation}</p>
             </div>
             <ul className="social-icon">
               <li>

@@ -11,7 +11,6 @@ import {
 import ScrollToTop from "react-scroll-up";
 import Testimonial from "../elements/Testimonial";
 
-import Footer from "../component/footer/Footer";
 import FooterTwo from "../component/footer/FooterTwo";
 
 import { Link } from "react-router-dom";
@@ -43,12 +42,6 @@ const ServiceList = [
     title: "PORTS & SHIPPING AND OIL & GAS",
     description:
       "Scrutiny for piping infrastructure and metal assembly can be effectively managed through TECHGIS UAV surveillance through data acquisition, data processing, data analysis and data sharing.",
-  },
-  {
-    icon: <FiCast />,
-    title: "Website Development",
-    description:
-      "I throw myself down among the tall grass by the stream as I lie close to the earth.",
   },
   {
     icon: <FiMonitor />,
@@ -110,20 +103,15 @@ class Service extends Component {
               <nav className="mainmenunav d-lg-block">
                 <Scrollspy
                   className="mainmenu"
-                  items={[
-                    "home",
-                    "about",
-                    "service-details",
-                    "projects",
-                    "team",
-                    "team",
-                    "blog",
-                  ]}
+                  items={["home", "about", "projects"]}
                   currentClassName="is-current"
                   offset={-200}
                 >
                   <li>
                     <Link to="/"> Home </Link>
+                  </li>
+                  <li>
+                    <Link to="/projects"> Projects </Link>
                   </li>
                   <li>
                     <Link to="/contact"> Contact Us </Link>
@@ -151,7 +139,7 @@ class Service extends Component {
         {/* End Header Area  */}
 
         {/* Start Breadcrump Area */}
-        <Breadcrumb title={"Service & Solutions"} />
+        <Breadcrumb title={"Tech-GIS Service & Solutions"} />
         {/* End Breadcrump Area */}
 
         {/* Start Service Area */}
@@ -174,15 +162,13 @@ class Service extends Component {
                   className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"
                   key={i}
                 >
-                  <a href="/service-details">
-                    <div className="service service__style--2">
-                      <div className="icon">{val.icon}</div>
-                      <div className="content">
-                        <h3 className="title">{val.title}</h3>
-                        <p>{val.description}</p>
-                      </div>
+                  <div className="service service__style--2">
+                    <div className="icon">{val.icon}</div>
+                    <div className="content">
+                      <h3 className="title">{val.title}</h3>
+                      <p>{val.description}</p>
                     </div>
-                  </a>
+                  </div>
                 </div>
               ))}
             </div>
@@ -191,11 +177,11 @@ class Service extends Component {
         {/* End Service Area */}
 
         {/* Start Testimonial Area */}
-        <div className="rn-testimonial-area bg_color--5 ptb--120" id="team">
+        {/* <div className="rn-testimonial-area bg_color--5 ptb--120" id="team">
           <div className="container">
             <Testimonial />
           </div>
-        </div>
+        </div> */}
         {/* End Testimonial Area */}
 
         {/* Start Back To Top */}

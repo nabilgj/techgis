@@ -7,6 +7,7 @@ import FooterTwo from "../component/footer/FooterTwo";
 import Helmet from "../component/common/Helmet";
 
 import TeamOne from "../blocks/team/TeamOne";
+// import Team from "../blocks/Team.jsx";
 import Slider from "react-slick";
 
 import { Link } from "react-router-dom";
@@ -244,6 +245,7 @@ class Home extends Component {
                       <div className="content">
                         <h4 className="title">{val.title}</h4>
                         <p className="subtitle">{val.description}</p>
+                        <p className="subtitle">{val.description2}</p>
                       </div>
                     </div>
                   </a>
@@ -261,12 +263,12 @@ class Home extends Component {
                   <div className="col-lg-8">
                     <div className="inner text-left">
                       <h2> Let's get started </h2>
-                      <a
+                      <Link
                         className="rn-button-style--2 btn-primary-color-projects"
-                        href="#projects-in-progress"
+                        to="/projects"
                       >
                         Our Projects
-                      </a>
+                      </Link>
                       {/* <Link
                         to="#projects-in-progress"
                         className="rn-button-style--2 mt--70 mt_sm--30 mt_md--30"
@@ -292,7 +294,7 @@ class Home extends Component {
             <div className="col-lg-12 col-xl-6">
               <div className="thumbnail">
                 <img
-                  src="/assets/images/featured/pexels-deva-darshan-1123972.jpg"
+                  src="/assets/images/featured/Picture1.jpg"
                   alt="Featured Images"
                 />
               </div>
@@ -316,12 +318,6 @@ class Home extends Component {
                 >
                   Learn More
                 </Link>
-                {/* <a
-                  className="rn-button-style--2 btn-primary-color-history"
-                  href="service"
-                >
-                  Learn More
-                </a> */}
               </div>
             </div>
           </div>
@@ -364,9 +360,9 @@ class Home extends Component {
                           <a href="#projects-in-progress">{value.title}</a>
                         </h4>
                         <div className="portfolio-button">
-                          <a className="rn-btn" href="#projects-in-progress">
+                          <Link className="rn-btn" to="/projects">
                             Check
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -389,11 +385,13 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-              <TeamOne
-                column="col-lg-3 col-md-6 col-sm-6 col-12"
-                teamStyle="team-style--bottom"
-                item="4"
-              />
+              <Link to="/teams">
+                <TeamOne
+                  column="col-lg-3 col-md-6 col-sm-6 col-12"
+                  teamStyle="team-style--bottom"
+                  item="4"
+                />
+              </Link>
             </div>
           </div>
         </div>

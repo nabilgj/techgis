@@ -1,47 +1,13 @@
 import React, { Component } from "react";
 
-const PortfolioList2 = [
-  {
-    image: "image-1",
-    category: "Utilities",
-    title: "Project 1",
-  },
-  {
-    image: "image-2",
-    category: "AGRICULTURE",
-    title: "Project 2",
-  },
-  {
-    image: "image-3",
-    category: "CIVIL & INFRASTRUCTURE",
-    title: "Project 3",
-  },
-  {
-    image: "image-4",
-    category: "CIVIL & INFRASTRUCTURE",
-    title: "Project 4",
-  },
-  {
-    image: "image-5",
-    category: "OIL & GAS",
-    title: "Project 5",
-  },
-  {
-    image: "image-6",
-    category: "MINING & EXPLORATION",
-    title: "Project 6",
-  },
-  {
-    image: "image-7",
-    category: "ENVIRONMENT MANAGEMENT",
-    title: "Project 7",
-  },
-];
+import { Link } from "react-router-dom";
+
+import { projectlist } from "../../../src/page-demo/script";
 
 class PortfolioList extends Component {
   render() {
     const { column, styevariation } = this.props;
-    const list = PortfolioList2.slice(0, this.props.item);
+    const list = projectlist.slice(0, this.props.item);
     return (
       <React.Fragment>
         {list.map((value, index) => (
@@ -55,12 +21,12 @@ class PortfolioList extends Component {
                 <div className="inner">
                   <p>{value.category}</p>
                   <h4>
-                    <a href="/portfolio-details">{value.title}</a>
+                    <Link>{value.title}</Link>
                   </h4>
                   <div className="portfolio-button">
-                    <a className="rn-btn" href="/portfolio-details">
+                    <Link className="rn-btn" to="#project-details-in-progress">
                       View Details
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

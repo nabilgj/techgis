@@ -133,6 +133,8 @@ export const HistoryList = [
     title: "Goals",
     description:
       "Implement and execute geo-spatial technology for diverse economies.",
+    description2:
+      "Sustain, support and enhance while building capacity for all relevant stakeholders.",
   },
 ];
 
@@ -182,6 +184,45 @@ export const ProjectList = [
   {
     image: "image-4",
     imageUrl: "portfolio-4",
+    category: "ENVIRONMENT MANAGEMENT",
+    title: "Project 7",
+  },
+];
+
+// into PortfolioList inside elements portfolio
+export const projectlist = [
+  {
+    image: "image-1",
+    category: "Utilities",
+    title: "Project 1",
+  },
+  {
+    image: "image-2",
+    category: "AGRICULTURE",
+    title: "Project 2",
+  },
+  {
+    image: "image-3",
+    category: "CIVIL & INFRASTRUCTURE",
+    title: "Project 3",
+  },
+  {
+    image: "image-4",
+    category: "CIVIL & INFRASTRUCTURE",
+    title: "Project 4",
+  },
+  {
+    image: "image-5",
+    category: "OIL & GAS",
+    title: "Project 5",
+  },
+  {
+    image: "image-6",
+    category: "MINING & EXPLORATION",
+    title: "Project 6",
+  },
+  {
+    image: "image-7",
     category: "ENVIRONMENT MANAGEMENT",
     title: "Project 7",
   },
