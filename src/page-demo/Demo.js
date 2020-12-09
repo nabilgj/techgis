@@ -22,9 +22,9 @@ import {
 
 const settings = {
   autoplay: true,
-  autoplaySpeed: 500,
+  autoplaySpeed: 2000,
   infinite: true,
-  slidesToShow: 5,
+  slidesToShow: 4,
   slidesToScroll: 1,
   pauseOnHover: true,
 };
