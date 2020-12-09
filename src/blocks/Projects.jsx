@@ -32,7 +32,7 @@ class Projects extends React.Component {
   render() {
     return (
       <>
-        <PageHelmet pageTitle="Counters" />
+        <PageHelmet pageTitle="Projects" />
 
         {/* Start Header Area  */}
         <header className="header-area formobile-menu header--fixed ">
@@ -45,7 +45,7 @@ class Projects extends React.Component {
                       color: "white",
                     }}
                   >
-                    Tech-
+                    Tech
                     <span
                       style={{
                         color: "#2DAAC2",
@@ -69,7 +69,7 @@ class Projects extends React.Component {
                     <Link to="/"> Home </Link>
                   </li>
                   <li>
-                    <Link to="/service"> Service </Link>
+                    <Link to="/services"> Services </Link>
                   </li>
                   <li>
                     <Link to="/contact"> Contact Us </Link>
@@ -97,7 +97,7 @@ class Projects extends React.Component {
         {/* End Header Area  */}
 
         {/* Start Breadcrump Area */}
-        <Breadcrumb title={"Tech-GIS Projetcs Application"} />
+        <Breadcrumb title={"TechGIS - Projects Application"} />
         {/* End Breadcrump Area */}
 
         {/* Start Page Wrapper  */}
@@ -111,7 +111,7 @@ class Projects extends React.Component {
                     <div className="section-title text-center service-style--3 mb--30">
                       <h2 className="title"> APPLICATIONS </h2>
                       <p>
-                        Some of the CPEC related sectors which may benefit from
+                        Some of the various sectors which may benefit from
                         aerial imaging solutions are.
                       </p>
                     </div>

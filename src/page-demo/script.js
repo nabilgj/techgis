@@ -109,10 +109,10 @@ export const ContactUs = [
   {
     textPosition: "text-center",
     category: "",
-    title: "Tech-GIS",
+    title: "TechGIS",
     description: "Expert in Geo-Spatial Technology",
     buttonText: "Check us out",
-    buttonLink: "/service",
+    buttonLink: "/services",
     color: "#2DAAC2",
   },
 ];
@@ -170,27 +170,21 @@ export const ProjectList = [
     title: "Project 5",
   },
   {
-    image: "image-2",
-    imageUrl: "portfolio-2",
+    image: "image-6",
+    imageUrl: "portfolio-6",
     category: "MINING & EXPLORATION",
     title: "Project 6",
   },
   {
-    image: "image-3",
-    imageUrl: "portfolio-3",
-    category: "ENVIRONMENT MANAGEMENT",
-    title: "Project 7",
-  },
-  {
-    image: "image-4",
-    imageUrl: "portfolio-4",
+    image: "image-7",
+    imageUrl: "portfolio-7",
     category: "ENVIRONMENT MANAGEMENT",
     title: "Project 7",
   },
 ];
 
 // into PortfolioList inside elements portfolio
-export const projectlist = [
+export const singleProjectList = [
   {
     image: "image-1",
     category: "Utilities",
@@ -205,11 +199,6 @@ export const projectlist = [
     image: "image-3",
     category: "CIVIL & INFRASTRUCTURE",
     title: "Project 3",
-  },
-  {
-    image: "image-4",
-    category: "CIVIL & INFRASTRUCTURE",
-    title: "Project 4",
   },
   {
     image: "image-5",

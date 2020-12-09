@@ -74,7 +74,7 @@ class Service extends Component {
   render() {
     return (
       <React.Fragment>
-        <PageHelmet pageTitle="Service" />
+        <PageHelmet pageTitle="Services" />
 
         {/* Start Header Area  */}
         <header className="header-area formobile-menu header--fixed ">
@@ -87,7 +87,7 @@ class Service extends Component {
                       color: "white",
                     }}
                   >
-                    Tech-
+                    Tech
                     <span
                       style={{
                         color: "#2DAAC2",
@@ -139,7 +139,7 @@ class Service extends Component {
         {/* End Header Area  */}
 
         {/* Start Breadcrump Area */}
-        <Breadcrumb title={"Tech-GIS Service & Solutions"} />
+        <Breadcrumb title={"TechGIS - Services & Solutions"} />
         {/* End Breadcrump Area */}
 
         {/* Start Service Area */}
@@ -148,10 +148,9 @@ class Service extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="section-title text-center mb--30">
-                  <h2> The need to improve decision making capability </h2>
+                  <h2> The need to improve decision making Capability </h2>
                   <p>
-                    TECHGIS provides services and solutions for various sectors
-                    across Pakistan
+                    TechGIS provides services and solutions for various sectors.
                   </p>
                 </div>
               </div>

@@ -2,12 +2,12 @@ import React, { Component } from "react";
 
 import { Link } from "react-router-dom";
 
-import { projectlist } from "../../../src/page-demo/script";
+import { singleProjectList } from "../../../src/page-demo/script";
 
 class PortfolioList extends Component {
   render() {
     const { column, styevariation } = this.props;
-    const list = projectlist.slice(0, this.props.item);
+    const list = singleProjectList.slice(0, this.props.item);
     return (
       <React.Fragment>
         {list.map((value, index) => (

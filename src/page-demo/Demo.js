@@ -20,6 +20,15 @@ import {
   projectSlick2,
 } from "../page-demo/script";
 
+const settings = {
+  autoplay: true,
+  autoplaySpeed: 500,
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  pauseOnHover: true,
+};
+
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -75,7 +84,7 @@ class Home extends Component {
                       color: "white",
                     }}
                   >
-                    Tech-
+                    Tech
                     <span
                       style={{
                         color: "#2DAAC2",
@@ -123,7 +132,7 @@ class Home extends Component {
                   </li>
 
                   <li>
-                    <a href="#service"> Service </a>
+                    <a href="#services"> Services </a>
                   </li>
 
                   <li>
@@ -288,7 +297,7 @@ class Home extends Component {
         {/* Start service  */}
         <div
           className="rn-content-box-area rn-content-box-style--1 pb--120 bg_color--1"
-          id="service"
+          id="services"
         >
           <div className="row row--0 align-items-center">
             <div className="col-lg-12 col-xl-6">
@@ -314,7 +323,7 @@ class Home extends Component {
                 </p>
                 <Link
                   className="rn-button-style--2 btn-primary-color-history"
-                  to="service"
+                  to="services"
                 >
                   Learn More
                 </Link>
@@ -338,7 +347,7 @@ class Home extends Component {
 
           <div className="wrapper portfolio-sacousel-inner mb--55">
             <div className="portfolio-slick-activation mt--30 mt_sm--30">
-              <Slider {...projectSlick2}>
+              <Slider {...projectSlick2} {...settings}>
                 {ProjectList.map((value, index) => (
                   <div
                     className="portfolio portfolio-interior-design"

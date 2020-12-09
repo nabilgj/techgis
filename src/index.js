@@ -37,14 +37,13 @@ class Root extends Component {
 
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/projects`}
-            component={Projects}
+            path={`${process.env.PUBLIC_URL}/services`}
+            component={Service}
           />
-
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/service`}
-            component={Service}
+            path={`${process.env.PUBLIC_URL}/projects`}
+            component={Projects}
           />
 
           <Route

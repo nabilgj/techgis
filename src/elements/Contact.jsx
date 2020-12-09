@@ -55,7 +55,7 @@ class Contact extends Component {
                       color: "white",
                     }}
                   >
-                    Tech-
+                    Tech
                     <span
                       style={{
                         color: "#2DAAC2",
@@ -79,7 +79,7 @@ class Contact extends Component {
                     <Link to="/"> Home </Link>
                   </li>
                   <li>
-                    <Link to="/service"> Service </Link>
+                    <Link to="/services"> Services </Link>
                   </li>
                   <li>
                     <Link to="/projects"> Projects </Link>

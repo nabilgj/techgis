@@ -45,7 +45,7 @@ class Team extends React.Component {
                       color: "white",
                     }}
                   >
-                    Tech-
+                    Tech
                     <span
                       style={{
                         color: "#2DAAC2",
@@ -69,7 +69,7 @@ class Team extends React.Component {
                     <Link to="/"> Home </Link>
                   </li>
                   <li>
-                    <Link to="/service"> Service </Link>
+                    <Link to="/services"> Services </Link>
                   </li>
                   <li>
                     <Link to="/projetcs"> Projects </Link>
@@ -100,7 +100,7 @@ class Team extends React.Component {
         {/* End Header Area  */}
 
         {/* Start Breadcrump Area */}
-        <Breadcrumb title={"Tech-GIS - Team"} />
+        <Breadcrumb title={"TechGIS - Team"} />
         {/* End Breadcrump Area */}
 
         {/* Start Page Wrapper  */}
