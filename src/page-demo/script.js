@@ -1,3 +1,6 @@
+import React from "react";
+import { FiCast, FiLayers, FiUsers, FiMonitor } from "react-icons/fi";
+
 export const portfolioSlick = {
   dots: true,
   infinite: true,
@@ -103,6 +106,46 @@ export const slideSlick = {
   easing: "fade",
   adaptiveHeight: true,
 };
+
+// into Service
+export const ServiceList = [
+  {
+    icon: <FiCast />,
+    title: "Utilities",
+    description:
+      "Telecommunication Towers, Power Transmission and Distribution lines and systems such as towers and sub-stations require periodic maintenance for prevention of break-down.",
+  },
+  {
+    icon: <FiLayers />,
+    title: "AGRICULTURE",
+    description:
+      "Geo-spatial technology has shown promising results in agriculture with data-driven integrated pest management, fertilizer application and crop health analysis.",
+  },
+  {
+    icon: <FiUsers />,
+    title: "CIVIL & INFRASTRUCTURE",
+    description:
+      "TECHGIS provides 2D Maps, 3D Maps, Topographical surveillance, Engineering drawings and mapping of civil infrastructure that results in helping the client make a better execution plan.",
+  },
+  {
+    icon: <FiMonitor />,
+    title: "PORTS & SHIPPING AND OIL & GAS",
+    description:
+      "Scrutiny for piping infrastructure and metal assembly can be effectively managed through TECHGIS UAV surveillance through data acquisition, data processing, data analysis and data sharing.",
+  },
+  {
+    icon: <FiMonitor />,
+    title: "MINING & EXPLORATION",
+    description:
+      "Geo-spatial technology in mining improve the overall efficiency of large mine site and quarry management by providing accurate and comprehensive data, detailing site conditions in a very short time.",
+  },
+  {
+    icon: <FiMonitor />,
+    title: "ENVIRONMENT MANAGEMENT",
+    description:
+      "Climate change is a global phenomenon with a high probability to greatly impact many countries. TECHGIS believes in developing technological solutions for a safer and sustainable environment.",
+  },
+];
 
 // into interior for contact us button on hero
 export const ContactUs = [

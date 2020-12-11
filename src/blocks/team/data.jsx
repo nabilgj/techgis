@@ -2,7 +2,7 @@ import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 // into TeamOne
-let teamData = [
+let teamCore = [
   {
     images: "01",
     name: "Brigadier(Retd) Sajjad Sardar ",
@@ -190,4 +190,4 @@ export const advisors = [
 ];
 
 // into TeamOne
-export default teamData;
+export default teamCore;

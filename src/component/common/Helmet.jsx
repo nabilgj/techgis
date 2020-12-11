@@ -6,10 +6,10 @@ class PageHelmet extends Component {
     return (
       <React.Fragment>
         <Helmet>
-          <title>{this.props.pageTitle} || Tech-GIS </title>
+          <title>{this.props.pageTitle} || TechGIS</title>
           <meta
             name="description"
-            content="Trydo – Multipurpose React Template is a multi-use React template. It is designed to go well with multi-purpose websites. Trydo React Template will create that various landing Template, Creative Agency, And Corporate Website ."
+            content="Expert in Geo-Spatial Technology. We introduced the latest advancement in geospatial technology in a range of sectors with high standards and economical cost."
           />
         </Helmet>
       </React.Fragment>

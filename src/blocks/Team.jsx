@@ -1,18 +1,14 @@
 import React from "react";
-import TeamOne from "./team/TeamOne";
-import TeamTwo from "./team/TeamTwo";
 
-import PageHelmet from "../component/common/Helmet";
-import Breadcrumb from "../elements/common/Breadcrumb";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
-import Header from "../component/header/Header";
-import FooterTwo from "../component/footer/FooterTwo";
 
-import { Link } from "react-router-dom";
-
-import Scrollspy from "react-scrollspy";
-import { FiX, FiMenu } from "react-icons/fi";
+import TeamHeader from "../component/header/TeamHeader";
+import PageHelmet from "../component/common/Helmet";
+import Breadcrumb from "../elements/common/Breadcrumb";
+import TeamCore from "./team/TeamCore";
+import TeamAdvisors from "./team/TeamAdvisors";
+import MainFooter from "../component/footer/MainFooter";
 
 class Team extends React.Component {
   constructor(props) {
@@ -33,75 +29,8 @@ class Team extends React.Component {
     return (
       <>
         <PageHelmet pageTitle="Team" />
-        {/* Start Header Area  */}
-        {/* Start Header Area  */}
-        <header className="header-area formobile-menu header--fixed ">
-          <div className="header-wrapper" id="header-wrapper">
-            <div className="header-left">
-              <div className="logo">
-                <Link to="/">
-                  <p
-                    style={{
-                      color: "white",
-                    }}
-                  >
-                    Tech
-                    <span
-                      style={{
-                        color: "#2DAAC2",
-                      }}
-                    >
-                      GIS
-                    </span>
-                  </p>
-                </Link>
-              </div>
-            </div>
-            <div className="header-right">
-              <nav className="mainmenunav d-lg-block">
-                <Scrollspy
-                  className="mainmenu"
-                  items={["home", "service", "projects", "team"]}
-                  currentClassName="is-current"
-                  offset={-200}
-                >
-                  <li>
-                    <Link to="/"> Home </Link>
-                  </li>
-                  <li>
-                    <Link to="/services"> Services </Link>
-                  </li>
-                  <li>
-                    <Link to="/projetcs"> Projects </Link>
-                  </li>
-                  <li>
-                    <Link to="/contact"> Contact Us </Link>
-                  </li>
-                </Scrollspy>
-              </nav>
-
-              <div className="humberger-menu d-block d-lg-none pl--20">
-                <span
-                  onClick={this.menuTrigger}
-                  className="menutrigger text-white"
-                >
-                  <FiMenu />
-                </span>
-              </div>
-
-              <div className="close-menu d-block d-lg-none">
-                <span onClick={this.CLoseMenuTrigger} className="closeTrigger">
-                  <FiX />
-                </span>
-              </div>
-            </div>
-          </div>
-        </header>
-        {/* End Header Area  */}
-
-        {/* Start Breadcrump Area */}
+        <TeamHeader />
         <Breadcrumb title={"TechGIS - Team"} />
-        {/* End Breadcrump Area */}
 
         {/* Start Page Wrapper  */}
         <main className="page-wrapper">
@@ -120,7 +49,7 @@ class Team extends React.Component {
                     </div>
                   </div>
                 </div>
-                <TeamTwo
+                <TeamAdvisors
                   column="col-lg-3"
                   teamStyle="team-style--bottom"
                   item="8"
@@ -145,7 +74,7 @@ class Team extends React.Component {
                     </div>
                   </div>
                 </div>
-                <TeamOne
+                <TeamCore
                   column="col-lg-3"
                   teamStyle="team-style--bottom"
                   item="8"
@@ -165,11 +94,11 @@ class Team extends React.Component {
         </div>
         {/* End Back To Top */}
 
-        {/* Start Footer */}
-        <FooterTwo />
-        {/* End Footer */}
+        <MainFooter />
       </>
     );
   }
 }
+
+// into index
 export default Team;

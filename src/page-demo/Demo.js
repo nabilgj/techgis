@@ -1,16 +1,14 @@
 import React, { Component, Fragment } from "react";
-import Scrollspy from "react-scrollspy";
+
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp, FiX, FiMenu } from "react-icons/fi";
-
-import FooterTwo from "../component/footer/FooterTwo";
-import Helmet from "../component/common/Helmet";
-
-import TeamOne from "../blocks/team/TeamOne";
-// import Team from "../blocks/Team.jsx";
-import Slider from "react-slick";
-
 import { Link } from "react-router-dom";
+
+import MainHeader from "../component/header/MainHeader";
+import Helmet from "../component/common/Helmet";
+import Slider from "react-slick";
+import TeamCore from "../blocks/team/TeamCore";
+import MainFooter from "../component/footer/MainFooter";
 
 // internal data
 import {
@@ -20,6 +18,7 @@ import {
   projectSlick2,
 } from "../page-demo/script";
 
+// project scrolling settings
 const settings = {
   autoplay: true,
   autoplaySpeed: 2000,
@@ -72,97 +71,7 @@ class Home extends Component {
     return (
       <Fragment>
         <Helmet pageTitle="Home" />
-
-        {/* Start Header */}
-        <header className="header-area formobile-menu header--fixed ">
-          <div className="header-wrapper" id="header-wrapper">
-            <div className="header-left">
-              <div className="logo">
-                <Link to="/">
-                  <p
-                    style={{
-                      color: "white",
-                    }}
-                  >
-                    Tech
-                    <span
-                      style={{
-                        color: "#2DAAC2",
-                      }}
-                    >
-                      GIS
-                    </span>
-                  </p>
-                </Link>
-              </div>
-            </div>
-            <div className="header-right">
-              <nav className="mainmenunav d-lg-block">
-                <Scrollspy
-                  className="mainmenu"
-                  items={[
-                    "home",
-                    "about",
-                    "service",
-                    "projects",
-                    "team",
-                    "team",
-                  ]}
-                  currentClassName="is-current"
-                  offset={-200}
-                >
-                  {/* <li className="has-droupdown">
-                    <Link to="#home"> Home </Link>
-                    <ul className="submenu">
-                      <li>
-                        <Link to="/main-demo"> About Us </Link>
-                      </li>
-                      <li>
-                        <Link to="/dark-main-demo"> Our Story </Link>
-                      </li>
-                    </ul>
-                  </li> */}
-
-                  <li>
-                    <a href="#home"> Home </a>
-                  </li>
-
-                  <li>
-                    <a href="#about"> About Us </a>
-                  </li>
-
-                  <li>
-                    <a href="#services"> Services </a>
-                  </li>
-
-                  <li>
-                    <a href="#projects"> Projects </a>
-                  </li>
-
-                  <li>
-                    <a href="#team"> Team </a>
-                  </li>
-                </Scrollspy>
-              </nav>
-
-              <div className="humberger-menu d-block d-lg-none pl--20">
-                <span
-                  onClick={this.menuTrigger}
-                  className="menutrigger text-white"
-                >
-                  <FiMenu />
-                </span>
-              </div>
-
-              <div className="close-menu d-block d-lg-none">
-                <span onClick={this.CLoseMenuTrigger} className="closeTrigger">
-                  <FiX />
-                </span>
-              </div>
-            </div>
-          </div>
-        </header>
-        {/* End Header */}
+        <MainHeader />
 
         {/* Start hero */}
         <div className="slider-activation slider-creative-agency" id="home">
@@ -278,12 +187,6 @@ class Home extends Component {
                       >
                         Our Projects
                       </Link>
-                      {/* <Link
-                        to="#projects-in-progress"
-                        className="rn-button-style--2 mt--70 mt_sm--30 mt_md--30"
-                      >
-                        Our Projects
-                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -395,7 +298,7 @@ class Home extends Component {
                 </div>
               </div>
               <Link to="/teams">
-                <TeamOne
+                <TeamCore
                   column="col-lg-3 col-md-6 col-sm-6 col-12"
                   teamStyle="team-style--bottom"
                   item="4"
@@ -406,9 +309,7 @@ class Home extends Component {
         </div>
         {/* End Team  */}
 
-        {/* Start Footer */}
-        <FooterTwo />
-        {/* End Footer */}
+        <MainFooter />
 
         {/* Start Back To Top */}
         <div className="backto-top">

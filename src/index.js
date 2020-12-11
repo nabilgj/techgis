@@ -9,12 +9,10 @@ import * as serviceWorker from "./serviceWorker";
 import "./index.scss";
 
 // Home layout
-// import Home from "./home/Home";
 import Demo from "./page-demo/Demo";
 
 // Element Layout
 import Projects from "./blocks/Projects";
-// import Team from "./blocks/Team";
 import Team from "./blocks/Team.jsx";
 
 import About from "./elements/About";
