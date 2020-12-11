@@ -33,9 +33,7 @@ class Home extends Component {
     super(props);
     this.menuTrigger = this.menuTrigger.bind(this);
     this.CloseMenuTrigger = this.CloseMenuTrigger.bind(this);
-    // this.stickyHeader = this.stickyHeader.bind(this);
 
-    //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
     window.addEventListener("load", function () {
       console.log("All assets are loaded");
     });
@@ -152,7 +150,7 @@ class Home extends Component {
                   className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"
                   key={i}
                 >
-                  <a href="/about">
+                  <Link to="/about">
                     <div className="service service__style--1">
                       <div className="icon">
                         {/* <img
@@ -166,7 +164,7 @@ class Home extends Component {
                         <p className="subtitle">{val.description2}</p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -180,7 +178,7 @@ class Home extends Component {
                 <div className="row">
                   <div className="col-lg-8">
                     <div className="inner text-left">
-                      <h2> Let's get started </h2>
+                      <h2 style={{ color: "#fff" }}> Let's get started </h2>
                       <Link
                         className="rn-button-style--2 btn-primary-color-projects"
                         to="/projects"
@@ -272,7 +270,7 @@ class Home extends Component {
                           <a href="#projects-in-progress">{value.title}</a>
                         </h4>
                         <div className="portfolio-button">
-                          <Link className="rn-btn" to="/projects">
+                          <Link className="rn-button-style--3" to="/projects">
                             Check
                           </Link>
                         </div>

@@ -88,23 +88,33 @@ class MainHeader extends Component {
                 offset={-200}
               >
                 <li>
-                  <a href="#home"> Home </a>
+                  <a href="#home" onClick={this.CLoseMenuTrigger}>
+                    Home
+                  </a>
                 </li>
 
                 <li>
-                  <a href="#about"> About Us </a>
+                  <a href="#about" onClick={this.CLoseMenuTrigger}>
+                    About Us
+                  </a>
                 </li>
 
                 <li>
-                  <a href="#services"> Services </a>
+                  <a href="#services" onClick={this.CLoseMenuTrigger}>
+                    Services
+                  </a>
                 </li>
 
                 <li>
-                  <a href="#projects"> Projects </a>
+                  <a href="#projects" onClick={this.CLoseMenuTrigger}>
+                    Projects
+                  </a>
                 </li>
 
                 <li>
-                  <a href="#team"> Team </a>
+                  <a href="#team" onClick={this.CLoseMenuTrigger}>
+                    Team
+                  </a>
                 </li>
               </Scrollspy>
             </nav>

@@ -32,8 +32,10 @@ class Contact extends Component {
   }
   static defaultProps = {
     center: {
-      lat: 59.95,
-      lng: 30.33,
+      lat: 24.9178057,
+      lng: 67.091417,
+      // lat: 59.95,
+      // lng: 30.33,
     },
     zoom: 11,
   };
@@ -127,9 +129,9 @@ class Contact extends Component {
               defaultZoom={this.props.zoom}
             >
               <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
-                text="My Marker"
+                lat={24.9178057}
+                lng={67.091417}
+                text="TechGIS"
               />
             </GoogleMapReact>
           </div>
