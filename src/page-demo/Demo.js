@@ -1,14 +1,12 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, lazy, Suspense } from "react";
+import loadable from "@loadable/component";
 
 import ScrollToTop from "react-scroll-up";
-import { FiChevronUp, FiX, FiMenu } from "react-icons/fi";
+import { FiChevronUp } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-import MainHeader from "../component/header/MainHeader";
 import Helmet from "../component/common/Helmet";
 import Slider from "react-slick";
-import TeamCore from "../blocks/team/TeamCore";
-import MainFooter from "../component/footer/MainFooter";
 
 // internal data
 import {
@@ -27,6 +25,11 @@ const settings = {
   slidesToScroll: 1,
   pauseOnHover: true,
 };
+
+const MainHeader = lazy(() => import("../component/header/MainHeader"));
+const TeamCore = lazy(() => import("../blocks/team/TeamCore"));
+const MainFooter = lazy(() => import("../component/footer/MainFooter"));
+const renderLoader = () => <p>Loading</p>;
 
 class Home extends Component {
   constructor(props) {
@@ -69,9 +72,16 @@ class Home extends Component {
     return (
       <Fragment>
         <Helmet pageTitle="Home" />
-        <MainHeader />
 
-        {/* Start hero */}
+        <Suspense fallback={renderLoader()}>
+          <MainHeader />
+        </Suspense>
+
+        {/* <Suspense fallback={renderLoader()}>
+          <Hero />
+        </Suspense> */}
+
+        {/* start hero */}
         <div className="slider-activation slider-creative-agency" id="home">
           <div className="bg_image bg_image--35" data-black-overlay="4">
             {ContactUs.map((value, index) => (
@@ -117,7 +127,7 @@ class Home extends Component {
             ))}
           </div>
         </div>
-        {/* End hero  */}
+        {/* end hero */}
 
         {/* Start about */}
         <div
@@ -296,18 +306,22 @@ class Home extends Component {
                 </div>
               </div>
               <Link to="/teams">
-                <TeamCore
-                  column="col-lg-3 col-md-6 col-sm-6 col-12"
-                  teamStyle="team-style--bottom"
-                  item="4"
-                />
+                <Suspense fallback={renderLoader()}>
+                  <TeamCore
+                    column="col-lg-3 col-md-6 col-sm-6 col-12"
+                    teamStyle="team-style--bottom"
+                    item="4"
+                  />
+                </Suspense>
               </Link>
             </div>
           </div>
         </div>
         {/* End Team  */}
 
-        <MainFooter />
+        <Suspense fallback={renderLoader()}>
+          <MainFooter />
+        </Suspense>
 
         {/* Start Back To Top */}
         <div className="backto-top">

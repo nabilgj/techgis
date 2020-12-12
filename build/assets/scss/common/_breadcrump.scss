@@ -16,6 +16,18 @@
       background: linear-gradient(145deg, #005e70 0%, #2daac2 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      font-size: 72px;
+      @media #{$lg-layout} {
+        font-size: 56px;
+      }
+      @media #{$md-layout} {
+        font-size: 50px;
+      }
+      @media #{$sm-layout} {
+        font-size: 40px;
+        line-height: 59px;
+      }
     }
   }
   ul {
@@ -27,11 +39,11 @@
         a {
           color: #fff;
         }
-        &.breadcrumb-item {
-          &.active {
-            color: #f10;
-          }
-        }
+        // &.breadcrumb-item {
+        //   &.active {
+        //     color: #f10;
+        //   }
+        // }
       }
     }
   }

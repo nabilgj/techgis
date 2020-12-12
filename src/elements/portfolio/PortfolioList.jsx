@@ -24,8 +24,11 @@ class PortfolioList extends Component {
                     <Link>{value.title}</Link>
                   </h4>
                   <div className="portfolio-button">
-                    <Link className="rn-btn" to="#project-details-in-progress">
-                      View Details
+                    <Link
+                      className="rn-button-style--3"
+                      to="#projects-in-progress"
+                    >
+                      See Inside
                     </Link>
                   </div>
                 </div>

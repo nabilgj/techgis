@@ -1,13 +1,16 @@
-import React, { Component } from "react";
+import React, { Component, lazy, Suspense } from "react";
+import { Link } from "react-router-dom";
 
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 
-import AboutHeader from "../component/header/AboutHeader";
 import PageHelmet from "../component/common/Helmet";
-import Breadcrumb from "../elements/common/Breadcrumb";
-import TeamCore from "../blocks/team/TeamCore";
-import MainFooter from "../component/footer/MainFooter";
+
+const AboutHeader = lazy(() => import("../component/header/AboutHeader"));
+const Breadcrumb = lazy(() => import("../elements/common/Breadcrumb"));
+const TeamCore = lazy(() => import("../blocks/team/TeamCore"));
+const MainFooter = lazy(() => import("../component/footer/MainFooter"));
+const renderLoader = () => <p>Loading</p>;
 
 class About extends Component {
   render() {
@@ -21,11 +24,13 @@ class About extends Component {
       <React.Fragment>
         <PageHelmet pageTitle="About" />
 
-        <AboutHeader />
+        <Suspense fallback={renderLoader()}>
+          <AboutHeader />
+        </Suspense>
 
-        {/* Start Breadcrump Area */}
-        <Breadcrumb title={"TechGIS - Expert in Geospatial Technology"} />
-        {/* End Breadcrump Area */}
+        <Suspense fallback={renderLoader()}>
+          <Breadcrumb title={"TechGIS - Expert in Geospatial Technology"} />
+        </Suspense>
 
         {/* Start About Area  */}
         <div className="rn-about-area ptb--120 bg_color--1">
@@ -92,40 +97,6 @@ class About extends Component {
         </div>
         {/* End About Area  */}
 
-        {/* Start CounterUp Area */}
-        {/* <div className="rn-counterup-area pb--120 bg_color--1">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title text-center">
-                  <h3 className="fontWeight500">Our Fun Facts</h3>
-                </div>
-              </div>
-            </div>
-            <CounterOne />
-          </div>
-        </div> */}
-        {/* End CounterUp Area */}
-
-        {/* Start Finding Us Area  */}
-        {/* <div className="rn-finding-us-area rn-finding-us bg_color--1">
-          <div className="inner">
-            <div className="content-wrapper">
-              <div className="content">
-                <h4 className="theme-gradient"> Get Free Estimation </h4>
-                <p>
-                  Any text you would like to have here refer to free estimate
-                  qoute.
-                </p>
-                <Link className="rn-btn btn-white" to="#estimate-in-progress">
-                  Free Estimate
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div> */}
-        {/* End Finding Us Area  */}
-
         {/* Start Team Area  */}
         <div className="rn-team-area bg_color--1 ptb--120">
           <div className="container">
@@ -148,35 +119,19 @@ class About extends Component {
               </div>
             </div>
             <div className="row">
-              <TeamCore
-                column="col-lg-3 col-md-6 col-sm-6 col-12"
-                teamStyle="team-style--bottom"
-                item="4"
-              />
+              <Link to="/teams">
+                <Suspense fallback={renderLoader()}>
+                  <TeamCore
+                    column="col-lg-3 col-md-6 col-sm-6 col-12"
+                    teamStyle="team-style--bottom"
+                    item="4"
+                  />
+                </Suspense>
+              </Link>
             </div>
           </div>
         </div>
         {/* End Team Area  */}
-
-        {/* Start Testimonial Area */}
-        {/* <div className="rn-testimonial-area bg_color--5 ptb--120">
-          <div className="container">
-            <Testimonial />
-          </div>
-        </div> */}
-        {/* End Testimonial Area */}
-
-        {/* Start Brand Area */}
-        {/* <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <BrandTwo />
-              </div>
-            </div>
-          </div>
-        </div> */}
-        {/* End Brand Area */}
 
         {/* Start Back To Top */}
         <div className="backto-top">
@@ -186,7 +141,9 @@ class About extends Component {
         </div>
         {/* End Back To Top */}
 
-        <MainFooter />
+        <Suspense fallback={renderLoader()}>
+          <MainFooter />
+        </Suspense>
       </React.Fragment>
     );
   }

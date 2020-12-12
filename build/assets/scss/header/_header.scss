@@ -327,14 +327,14 @@
       ul {
         &.mainmenu {
           @media #{$md-layout} {
-            width: 60vw;
+            width: 40vw;
             height: 100vh;
             position: fixed;
             top: 0;
             right: -61vw;
             z-index: 99;
             padding: 55px;
-            background: #ffffff;
+            background: #000;
             -webkit-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
             -o-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
             transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -342,14 +342,14 @@
             overflow-y: auto;
           }
           @media #{$sm-layout} {
-            width: 60vw;
+            width: 40vw;
             height: 100vh;
             position: fixed;
             top: 0;
             right: -61vw;
             z-index: 99;
             padding: 55px;
-            background: #ffffff;
+            background: #000;
             -webkit-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
             -o-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
             transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -520,7 +520,7 @@
         visibility: visible;
         z-index: 9999;
         span {
-          color: #fff;
+          color: $theme-color;
           font-size: 30px;
           cursor: pointer;
         }
