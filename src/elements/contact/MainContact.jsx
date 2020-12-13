@@ -94,7 +94,10 @@ class MainContact extends Component {
             </div>
             <div className="col-lg-6 order-1 order-lg-2">
               <div className="thumbnail mb_md--30 mb_sm--30">
-                <img src="/assets/images/about/about-6.jpg" alt="trydo" />
+                <img
+                  src="/assets/images/about/about-6.jpg"
+                  alt="Drone is hovering at the top surface of the wind turbine to detect if any maintenance required."
+                />
               </div>
             </div>
           </div>

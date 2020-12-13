@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 // into TeamOne
 let teamCore = [
@@ -8,20 +8,10 @@ let teamCore = [
     name: "Brigadier(Retd) Sajjad Sardar ",
     title: "Core Member",
     designation: "Former Brigadier in Pakistan Army with an illustrious career",
-    socialNetwork: [
-      {
-        icon: <FaFacebookF />,
-        url: "#",
-      },
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-      {
-        icon: <FaTwitter />,
-        url: "#",
-      },
-    ],
+    SocialNetworkIcon: <FaLinkedinIn />,
+    facebook: "https://www.facebook.com",
+    linkedin: "https://www.linkedin.com/in/sajjad-sardar/",
+    twitter: "https://www.twitter.com",
   },
   {
     images: "02",
@@ -29,16 +19,10 @@ let teamCore = [
     title: "Core Member",
     designation:
       "An engineer with experience of over thirty years in Product Development, International Trade",
-    socialNetwork: [
-      {
-        icon: <FaFacebookF />,
-        url: "#",
-      },
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-    ],
+    SocialNetworkIcon: <FaLinkedinIn />,
+    facebook: "https://www.facebook.com/profile.php?id=658478741",
+    linkedin: "https://www.linkedin.com",
+    twitter: "https://www.twitter.com",
   },
   {
     images: "03",
@@ -46,20 +30,10 @@ let teamCore = [
     title: "Core Member",
     designation:
       "Over twenty five years of experience in Software Suite development as well as Geographic Information System.",
-    socialNetwork: [
-      {
-        icon: <FaFacebookF />,
-        url: "#",
-      },
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-      {
-        icon: <FaTwitter />,
-        url: "#",
-      },
-    ],
+    SocialNetworkIcon: <FaLinkedinIn />,
+    facebook: "https://www.facebook.com",
+    linkedin: "https://www.linkedin.com",
+    twitter: "https://www.twitter.com",
   },
   {
     images: "04",
@@ -67,20 +41,24 @@ let teamCore = [
     title: "Core Member",
     designation:
       "A business executive with experience in Economics and Business Management having expertise in Business Mapping and Ergonomics",
-    socialNetwork: [
-      {
-        icon: <FaFacebookF />,
-        url: "#",
-      },
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-      {
-        icon: <FaTwitter />,
-        url: "#",
-      },
-    ],
+    SocialNetworkIcon: <FaLinkedinIn />,
+    facebook: "https://www.facebook.com/abbas.syed.18007",
+    linkedin: "https://www.linkedin.com",
+    twitter: "https://www.twitter.com",
+    // socialNetwork: [
+    //   {
+    //     Icon: <FaFacebookF />,
+    //     url: "#",
+    //   },
+    //   {
+    //     Icon: <FaLinkedinIn />,
+    //     url: "#",
+    //   },
+    //   {
+    //     Icon: <FaTwitter />,
+    //     url: "#",
+    //   },
+    // ],
   },
 ];
 
@@ -92,20 +70,10 @@ export const advisors = [
     title: "Advisor",
     designation:
       "Space Scientist with expertise in Technology Materials, known for his work in Graphene",
-    socialNetwork: [
-      {
-        icon: <FaFacebookF />,
-        url: "#",
-      },
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-      {
-        icon: <FaTwitter />,
-        url: "#",
-      },
-    ],
+    SocialNetworkIcon: <FaLinkedinIn />,
+    facebook: "https://www.facebook.com",
+    linkedin: "https://www.linkedin.com/in/yarjan-abdul-samad-9ba8275/",
+    twitter: "https://www.twitter.com",
   },
   {
     images: "02",
@@ -113,16 +81,10 @@ export const advisors = [
     title: "Advisor",
     designation:
       "Expertise in Artificial Intelligence, Wireless Networking and Internet of Things.",
-    socialNetwork: [
-      {
-        icon: <FaFacebookF />,
-        url: "#",
-      },
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-    ],
+    SocialNetworkIcon: <FaLinkedinIn />,
+    facebook: "https://www.facebook.com",
+    linkedin: "https://www.linkedin.com/in/syed-ali-raza-zaidi-86a65213/",
+    twitter: "https://www.twitter.com",
   },
   {
     images: "03",
@@ -130,20 +92,10 @@ export const advisors = [
     title: "Advisor",
     designation:
       "Head of the Space Science Department, Institute of Space Technology.",
-    socialNetwork: [
-      {
-        icon: <FaFacebookF />,
-        url: "#",
-      },
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-      {
-        icon: <FaTwitter />,
-        url: "#",
-      },
-    ],
+    SocialNetworkIcon: <FaLinkedinIn />,
+    facebook: "https://www.facebook.com/najam.abbas.naqvi",
+    linkedin: "https://www.linkedin.com/in/najmnaqvi/",
+    twitter: "https://www.twitter.com",
   },
   {
     images: "04",
@@ -151,20 +103,10 @@ export const advisors = [
     title: "Advisor",
     designation:
       "Meritorious Professor and a seasoned Geographer with a distinguished career.",
-    socialNetwork: [
-      {
-        icon: <FaFacebookF />,
-        url: "#",
-      },
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-      {
-        icon: <FaTwitter />,
-        url: "#",
-      },
-    ],
+    SocialNetworkIcon: <FaLinkedinIn />,
+    facebook: "https://www.facebook.com",
+    linkedin: "https://www.linkedin.com/in/jamil-kazmi-53873915/",
+    twitter: "https://www.twitter.com",
   },
   {
     images: "01",
@@ -172,20 +114,24 @@ export const advisors = [
     title: "Advisor",
     designation:
       "Expertise in Machine Learning, Deep Learning and Algorithms Development.",
-    socialNetwork: [
-      {
-        icon: <FaFacebookF />,
-        url: "#",
-      },
-      {
-        icon: <FaLinkedinIn />,
-        url: "#",
-      },
-      {
-        icon: <FaTwitter />,
-        url: "#",
-      },
-    ],
+    SocialNetworkIcon: <FaLinkedinIn />,
+    facebook: "https://www.facebook.com",
+    linkedin: "https://www.linkedin.com/in/ghulam-mahdi-phd-a927007/",
+    twitter: "https://www.twitter.com",
+    // socialNetwork: [
+    //   {
+    //     Icon: <FaFacebookF />,
+    //     url: "#",
+    //   },
+    //   {
+    //     Icon: <FaLinkedinIn />,
+    //     url: "#",
+    //   },
+    //   {
+    //     Icon: <FaTwitter />,
+    //     url: "#",
+    //   },
+    // ],
   },
 ];
 

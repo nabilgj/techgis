@@ -1,5 +1,6 @@
 import React from "react";
 import teamCore from "./data";
+import { NavLink } from "react-router-dom";
 
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
@@ -8,13 +9,13 @@ const TeamCore = (props) => {
   return (
     <div className="row">
       {itemSlice.map((value, i) => (
-        <div className="col-lg-4 col-md-6 col-sm-6 col-12">
+        <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={value.name}>
           <div className="team">
             <div className="thumbnail">
               <img
                 className="w-100"
                 src={`/assets/images/team/team-${value.images}.jpg`}
-                alt="Team Member Images"
+                alt="These are some drone phots that are hovering in the air and 1st one is set on the table."
               />
             </div>
             <div className="content">
@@ -23,19 +24,31 @@ const TeamCore = (props) => {
             </div>
             <ul className="social-icon">
               <li>
-                <a href="https://www.facebook.com/">
+                <NavLink
+                  to={`${value.facebook}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaFacebookF />
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="http://linkedin.com/">
+                <NavLink
+                  to={`${value.linkedin}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaLinkedinIn />
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="https://twitter.com/">
+                <NavLink
+                  to={`${value.twitter}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaTwitter />
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

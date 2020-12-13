@@ -1,5 +1,4 @@
 import React, { Component, Fragment, lazy, Suspense } from "react";
-import loadable from "@loadable/component";
 
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
@@ -83,7 +82,7 @@ class Home extends Component {
 
         {/* start hero */}
         <div className="slider-activation slider-creative-agency" id="home">
-          <div className="bg_image bg_image--35" data-black-overlay="4">
+          <div className="bg_image bg-image-35" data-black-overlay="4">
             {ContactUs.map((value, index) => (
               <div
                 className="slide slide-style-2 slider-paralax d-flex align-items-center justify-content-center"
@@ -190,7 +189,7 @@ class Home extends Component {
                     <div className="inner text-left">
                       <h2 style={{ color: "#fff" }}> Let's get started </h2>
                       <Link
-                        className="rn-button-style--2 btn-primary-color-projects"
+                        className="rn-button-style--3 btn-primary-color-projects"
                         to="/projects"
                       >
                         Our Projects
@@ -215,7 +214,7 @@ class Home extends Component {
               <div className="thumbnail">
                 <img
                   src="/assets/images/featured/Picture1.jpg"
-                  alt="Featured Images"
+                  alt="A drone is operated by a tablet to get visual imagery for inspection to detect physical and electrical damage"
                 />
               </div>
             </div>

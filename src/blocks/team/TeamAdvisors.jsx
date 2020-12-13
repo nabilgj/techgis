@@ -23,17 +23,29 @@ const TeamAdvisors = (props) => {
             </div>
             <ul className="social-icon">
               <li>
-                <a href="https://www.facebook.com/">
+                <a
+                  href={`${value.facebook}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaFacebookF />
                 </a>
               </li>
               <li>
-                <a href="http://linkedin.com/">
+                <a
+                  href={`${value.linkedin}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/">
+                <a
+                  href={`${value.twitter}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaTwitter />
                 </a>
               </li>

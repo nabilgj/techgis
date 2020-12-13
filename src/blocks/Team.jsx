@@ -14,10 +14,6 @@ class Team extends React.Component {
   constructor(props) {
     super(props);
     this.menuTrigger = this.menuTrigger.bind(this);
-    // this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
-    // this.stickyHeader = this.stickyHeader.bind(this);
-
-    //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
     window.addEventListener("load", function () {
       console.log("All assets are loaded");
     });

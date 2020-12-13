@@ -37,15 +37,6 @@ class About extends Component {
           <div className="rn-about-wrapper">
             <div className="container">
               <div className="row row--35 align-items-center">
-                {/* <div className="col-lg-5">
-                  <div className="thumbnail">
-                    <img
-                      className="w-100"
-                      src="/assets/images/about/about-3.jpg"
-                      alt="About Images"
-                    />
-                  </div>
-                </div> */}
                 <div className="col-lg-12">
                   <div className="about-inner inner">
                     <div className="section-title text-center service-style--3 mb--30">

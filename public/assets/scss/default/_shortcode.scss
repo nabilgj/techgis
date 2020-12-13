@@ -141,6 +141,10 @@ font-family: 'Poppins', sans-serif;
   @extend %bgImagePosition;
 }
 
+.bg-image-35 {
+  background-image: url(/assets/images/hero/bg-image-35.jpg) !important;
+}
+
 @for $i from 1 through 35 {
   .bg_image--#{$i} {
     background-image: url(/assets/images/bg/bg-image-#{$i}.jpg) !important;
@@ -397,11 +401,11 @@ textarea:-ms-input-placeholder {
 }
 
 [data-black-overlay]:before {
-  background-color: #00010c;
+  background-color: #000;
 }
 
 [data-white-overlay]:before {
-  background-color: #b4abab;
+  background-color: #000;
 }
 
 @for $i from 1 through 10 {

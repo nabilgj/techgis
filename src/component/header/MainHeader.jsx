@@ -50,7 +50,7 @@ class MainHeader extends Component {
     }
 
     return (
-      <header className="header-area formobile-menu header--fixed ">
+      <header className="header-area formobile-menu header--fixed">
         <div className="header-wrapper" id="header-wrapper">
           <div className="header-left">
             <div className="logo">

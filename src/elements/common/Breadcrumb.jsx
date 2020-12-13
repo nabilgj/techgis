@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 class Breadcrumb extends Component {
   render() {
@@ -7,7 +6,8 @@ class Breadcrumb extends Component {
     return (
       <React.Fragment>
         <div
-          className="breadcrumb-area rn-bg-color ptb--120 bg_image bg_image--1"
+          className="breadcrumb-area rn-bg-color ptb--120"
+          style={{ background: "#000" }}
           data-black-overlay="6"
         >
           <div className="container">

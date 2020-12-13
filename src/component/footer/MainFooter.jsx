@@ -10,7 +10,10 @@ import {
 
 const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
-  { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
+  {
+    Social: <FaLinkedinIn />,
+    link: "https://www.linkedin.com/in/sajjad-sardar/",
+  },
   { Social: <FaInstagram />, link: "https://www.instagram.com/" },
   { Social: <FaTwitter />, link: "https://twitter.com/" },
 ];
@@ -18,8 +21,9 @@ const SocialShare = [
 const MainFooter = () => {
   return (
     <div
-      className="footer-style-2 ptb--30 bg_image bg_image--1"
+      className="footer-style-2 ptb--30"
       data-black-overlay="6"
+      style={{ background: "#000" }}
     >
       <div className="wrapper plr--50 plr_sm--20">
         <div className="row align-items-center justify-content-between">
@@ -50,7 +54,13 @@ const MainFooter = () => {
               <ul className="social-share rn-lg-size d-flex justify-content-center liststyle">
                 {SocialShare.map((val, i) => (
                   <li key={i}>
-                    <a href={`${val.link}`}>{val.Social}</a>
+                    <a
+                      href={`${val.link}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {val.Social}
+                    </a>
                   </li>
                 ))}
               </ul>
