@@ -145,6 +145,10 @@ font-family: 'Poppins', sans-serif;
   background-image: url(/assets/images/hero/bg-image-35.jpg) !important;
 }
 
+.bg_image--21 {
+  background-image: url(/assets/images/bg/bg_image--21.jpg) !important;
+}
+
 @for $i from 1 through 35 {
   .bg_image--#{$i} {
     background-image: url(/assets/images/bg/bg-image-#{$i}.jpg) !important;

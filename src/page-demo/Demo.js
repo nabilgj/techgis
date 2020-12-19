@@ -13,12 +13,23 @@ import {
   HistoryList,
   ProjectList,
   projectSlick2,
+  slideSlick,
+  SlideList,
 } from "../page-demo/script";
 
 // project scrolling settings
 const settings = {
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 3500,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  pauseOnHover: true,
+};
+
+const settingsslide = {
+  autoplay: true,
+  autoplaySpeed: 3000,
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -80,53 +91,64 @@ class Home extends Component {
           <Hero />
         </Suspense> */}
 
-        {/* start hero */}
-        <div className="slider-activation slider-creative-agency" id="home">
-          <div className="bg_image bg-image-35" data-black-overlay="4">
-            {ContactUs.map((value, index) => (
-              <div
-                className="slide slide-style-2 slider-paralax d-flex align-items-center justify-content-center"
-                key={index}
-              >
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12">
-                      <div className={`inner ${value.textPosition}`}>
-                        {value.category ? <span>{value.category}</span> : ""}
-                        {value.title ? (
-                          <h1 className="title theme-gradient h1">
-                            {value.title}
-                          </h1>
-                        ) : (
-                          ""
-                        )}
-                        {value.description ? (
-                          <p className="description">{value.description}</p>
-                        ) : (
-                          ""
-                        )}
-                        {value.buttonText ? (
-                          <div className="slide-btn">
-                            <Link
-                              className="rn-button-style--2 btn-primary-color"
-                              to={`${value.buttonLink}`}
-                              // href={`${value.buttonLink}`}
-                            >
-                              {value.buttonText}
-                            </Link>
-                          </div>
-                        ) : (
-                          ""
-                        )}
+        {/* Start Slider Area   */}
+        <div className="slider-wrapper color-white" id="home">
+          <div className="slider-activation slider-digital-agency">
+            <Slider
+              className="rn-slick-dot dot-light"
+              {...slideSlick}
+              {...settingsslide}
+            >
+              {SlideList.map((value, index) => (
+                <div
+                  className={`slide slide-style-2 fullscreen d-flex align-items-center justify-content-center bg_image ${value.bgImage}`}
+                  key={index}
+                  data-black-overlay="2"
+                >
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-lg-12">
+                        <div className={`inner ${value.textPosition}`}>
+                          {value.category ? <span>{value.category}</span> : ""}
+                          {value.title ? (
+                            <h1 className="title">{value.title}</h1>
+                          ) : (
+                            ""
+                          )}
+                          {value.description ? (
+                            <p className="description">{value.description}</p>
+                          ) : (
+                            ""
+                          )}
+                          {value.buttonText ? (
+                            <div className="slide-btn">
+                              <a
+                                className="rn-button-style--2 btn-primary-color"
+                                href={`${value.buttonLink}`}
+                                style={{ marginRight: "1rem" }}
+                              >
+                                {value.buttonText}
+                              </a>
+                              <a
+                                className="rn-button-style--2 btn-primary-color"
+                                href={`${value.techgisLink}`}
+                              >
+                                {value.techgisText}
+                              </a>
+                            </div>
+                          ) : (
+                            ""
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </Slider>
           </div>
         </div>
-        {/* end hero */}
+        {/* End Slider Area   */}
 
         {/* Start about */}
         <div
