@@ -155,6 +155,9 @@ font-family: 'Poppins', sans-serif;
     background-attachment: fixed;
   }
 }
+.slider-activation button.slick-arrow {
+  border: 2px solid $theme-color;
+}
 
 @for $i from 1 through 80 {
   .font--#{$i} {

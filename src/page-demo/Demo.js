@@ -9,7 +9,6 @@ import Slider from "react-slick";
 
 // internal data
 import {
-  ContactUs,
   HistoryList,
   ProjectList,
   projectSlick2,
@@ -20,7 +19,7 @@ import {
 // project scrolling settings
 const settings = {
   autoplay: true,
-  autoplaySpeed: 3500,
+  autoplaySpeed: 3000,
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -29,11 +28,11 @@ const settings = {
 
 const settingsslide = {
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 3500,
   infinite: true,
-  slidesToShow: 4,
+  slidesToShow: 1,
   slidesToScroll: 1,
-  pauseOnHover: true,
+  pauseOnHover: false,
 };
 
 const MainHeader = lazy(() => import("../component/header/MainHeader"));
@@ -122,19 +121,19 @@ class Home extends Component {
                           )}
                           {value.buttonText ? (
                             <div className="slide-btn">
-                              <a
+                              <Link
                                 className="rn-button-style--2 btn-primary-color"
-                                href={`${value.buttonLink}`}
+                                to={`${value.buttonLink}`}
                                 style={{ marginRight: "1rem" }}
                               >
                                 {value.buttonText}
-                              </a>
-                              <a
+                              </Link>
+                              <Link
                                 className="rn-button-style--2 btn-primary-color"
-                                href={`${value.techgisLink}`}
+                                to={`${value.techgisLink}`}
                               >
                                 {value.techgisText}
-                              </a>
+                              </Link>
                             </div>
                           ) : (
                             ""

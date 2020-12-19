@@ -119,6 +119,7 @@ export const SlideList = [
     buttonLink: "/services",
     techgisText: "Know TechGIS?",
     techgisLink: "/about",
+    color: "#2DAAC2",
   },
   {
     textPosition: "text-center",
@@ -130,39 +131,43 @@ export const SlideList = [
     buttonLink: "/services",
     techgisText: "Know TechGIS?",
     techgisLink: "/about",
+    color: "#2DAAC2",
   },
   {
     textPosition: "text-center",
     bgImage: "bg_image--23",
-    title: "What We Can Do?",
+    title: "What Can We Do?",
     description:
       "We provide highly advance top notch quality and phenomenal services to our customers!",
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know TechGIS?",
     techgisLink: "/about",
+    color: "#2DAAC2",
   },
   {
     textPosition: "text-center",
     bgImage: "bg_image--24",
-    title: "The Most Skilled Team!",
+    title: "Our Skilled Team!",
     description:
       "We are a team of qualified with profound knowledge of Geo-Spatial Technology and Business.",
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know TechGIS?",
     techgisLink: "/about",
+    color: "#2DAAC2",
   },
   {
     textPosition: "text-center",
     bgImage: "bg_image--25",
-    title: "Have You Seen Our Projects?",
+    title: "Seen Our Projects?",
     description:
       " We have an unbending devotion to provide unparalleled services with integrity and full support.",
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know TechGIS?",
     techgisLink: "/about",
+    color: "#2DAAC2",
   },
 ];
 
