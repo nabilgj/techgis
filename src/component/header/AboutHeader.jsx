@@ -90,6 +90,9 @@ class AboutHeader extends Component {
                   <Link to="/projects"> Projects </Link>
                 </li>
                 <li>
+                  <Link to="/teams"> Team </Link>
+                </li>
+                <li>
                   <Link to="/contact"> Contact Us </Link>
                 </li>
               </Scrollspy>

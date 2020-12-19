@@ -84,10 +84,16 @@ class ContactHeader extends Component {
                   <Link to="/"> Home </Link>
                 </li>
                 <li>
+                  <Link to="/about"> About </Link>
+                </li>
+                <li>
                   <Link to="/services"> Services </Link>
                 </li>
                 <li>
                   <Link to="/projects"> Projects </Link>
+                </li>
+                <li>
+                  <Link to="/teams"> Team </Link>
                 </li>
               </Scrollspy>
             </nav>

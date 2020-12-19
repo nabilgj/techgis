@@ -82,7 +82,7 @@ class MainHeader extends Component {
                   "services",
                   "projects",
                   "team",
-                  "team",
+                  "contact",
                 ]}
                 currentClassName="is-current"
                 offset={-200}
@@ -114,6 +114,12 @@ class MainHeader extends Component {
                 <li>
                   <a href="#team" onClick={this.CLoseMenuTrigger}>
                     Team
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#contact" onClick={this.CLoseMenuTrigger}>
+                    Contact
                   </a>
                 </li>
               </Scrollspy>
