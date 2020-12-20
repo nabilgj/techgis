@@ -710,7 +710,7 @@ Slider Default Button And Dot STyle
       opacity: 1;
       width: 68px;
       height: 68px;
-      border: 2px solid rgba(255, 255, 255, 0.2);
+      border: 2px solid $theme-color;
       border-radius: 100%;
 
       @media #{$md-layout} {
@@ -729,7 +729,7 @@ Slider Default Button And Dot STyle
       }
       &::before {
         line-height: 1;
-        opacity: 0.4;
+        opacity: 1;
         position: relative;
         top: -2px;
         transition: 0.5s;
