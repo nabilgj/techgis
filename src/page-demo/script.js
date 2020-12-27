@@ -129,7 +129,7 @@ export const SlideList = [
       "With an amalgamation of expertise in Aerial Surveillance, Data-Management, Ergonomics and Artificial Intelligence.",
     buttonText: "Check Inside",
     buttonLink: "/services",
-    techgisText: "Know TechGIS?",
+    techgisText: "Know GIS",
     techgisLink: "/about",
     color: "#2DAAC2",
   },
@@ -141,7 +141,7 @@ export const SlideList = [
       "We provide highly advance top notch quality and phenomenal services to our customers!",
     buttonText: "Check Inside",
     buttonLink: "/services",
-    techgisText: "Know TechGIS?",
+    techgisText: "Know GIS",
     techgisLink: "/about",
     color: "#2DAAC2",
   },
@@ -153,7 +153,7 @@ export const SlideList = [
       "We are a team of qualified with profound knowledge of Geo-Spatial Technology and Business.",
     buttonText: "Check Inside",
     buttonLink: "/services",
-    techgisText: "Know TechGIS?",
+    techgisText: "Know GIS",
     techgisLink: "/about",
     color: "#2DAAC2",
   },
@@ -165,7 +165,7 @@ export const SlideList = [
       " We have an unbending devotion to provide unparalleled services with integrity and full support.",
     buttonText: "Check Inside",
     buttonLink: "/services",
-    techgisText: "Know TechGIS?",
+    techgisText: "Know GIS",
     techgisLink: "/about",
     color: "#2DAAC2",
   },
@@ -174,14 +174,16 @@ export const SlideList = [
 // into Service
 export const ServiceLists = [
   {
-    id: "utilities",
+    id: "utilities-",
+    imgUrl: "service-01.jpg",
     icon: <FiCast />,
     title: "Utilities",
     description:
       "Telecommunication Towers, Power Transmission and Distribution lines and systems such as towers and sub-stations require periodic maintenance for prevention of break-down.",
   },
   {
-    id: "agriculture",
+    id: "agriculture-",
+    imgUrl: "service-01.jpg",
     icon: <FiLayers />,
     title: "AGRICULTURE",
     description:
@@ -189,6 +191,7 @@ export const ServiceLists = [
   },
   {
     id: "civil-infrastructure",
+    imgUrl: "service-01.jpg",
     icon: <FiUsers />,
     title: "CIVIL & INFRASTRUCTURE",
     description:
@@ -196,6 +199,7 @@ export const ServiceLists = [
   },
   {
     id: "ports-shipping",
+    imgUrl: "service-01.jpg",
     icon: <FiMonitor />,
     title: "PORTS & SHIPPING AND OIL & GAS",
     description:
@@ -203,6 +207,7 @@ export const ServiceLists = [
   },
   {
     id: "mining-exploration",
+    imgUrl: "service-01.jpg",
     icon: <FiMonitor />,
     title: "MINING & EXPLORATION",
     description:
@@ -210,8 +215,53 @@ export const ServiceLists = [
   },
   {
     id: "environment-management",
-    icon: <FiMonitor />,
+    imgUrl: "service-01.jpg",
     title: "ENVIRONMENT MANAGEMENT",
+    description:
+      "Climate change is a global phenomenon with a high probability to greatly impact many countries. TECHGIS believes in developing technological solutions for a safer and sustainable environment.",
+  },
+];
+export const ServiceListVideos = [
+  {
+    id: "utilities-",
+    video: "video-1608404717.mp4",
+    videoImgUrl: "service-01.jpg",
+    description:
+      "Telecommunication Towers, Power Transmission and Distribution lines and systems such as towers and sub-stations require periodic maintenance for prevention of break-down.",
+  },
+  {
+    id: "agriculture-",
+    video: "video-1608404702.mp4",
+    videoImgUrl: "service-01.jpg",
+    description:
+      "Geo-spatial technology has shown promising results in agriculture with data-driven integrated pest management, fertilizer application and crop health analysis.",
+  },
+  {
+    id: "civil-infrastructure",
+    video: "video-1608404692.mp4",
+    videoImgUrl: "service-01.jpg",
+    title: "CIVIL & INFRASTRUCTURE",
+    description:
+      "TECHGIS provides 2D Maps, 3D Maps, Topographical surveillance, Engineering drawings and mapping of civil infrastructure that results in helping the client make a better execution plan.",
+  },
+  {
+    id: "ports-shipping",
+    video: "video-1608404724.mp4",
+    videoImgUrl: "service-01.jpg",
+    description:
+      "Scrutiny for piping infrastructure and metal assembly can be effectively managed through TECHGIS UAV surveillance through data acquisition, data processing, data analysis and data sharing.",
+  },
+  {
+    id: "mining-exploration",
+    video: "video-1608404717.mp4",
+    videoImgUrl: "service-01.jpg",
+    description:
+      "Geo-spatial technology in mining improve the overall efficiency of large mine site and quarry management by providing accurate and comprehensive data, detailing site conditions in a very short time.",
+  },
+  {
+    id: "environment-management",
+    video: "video-1608404717.mp4",
+    videoImgUrl: "service-01.jpg",
     description:
       "Climate change is a global phenomenon with a high probability to greatly impact many countries. TECHGIS believes in developing technological solutions for a safer and sustainable environment.",
   },

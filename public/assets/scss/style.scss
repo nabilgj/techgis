@@ -112,6 +112,9 @@
     Blog Styles
 ***************************************/
 
+// @import "blog/blog";
+// @import "blog/blog-details";
+
 /**************************************
     Template Styles
 ***************************************/
@@ -119,3 +122,5 @@
 @import "template/about";
 @import "template/portfolio-details";
 @import "template/service-details";
+@import "template/dark-version";
+@import "template/preview";

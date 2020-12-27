@@ -28,7 +28,7 @@ const settings = {
 
 const settingsslide = {
   autoplay: true,
-  autoplaySpeed: 3500,
+  autoplaySpeed: 4000,
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -277,39 +277,41 @@ class Home extends Component {
           </div>
 
           <div className="wrapper portfolio-sacousel-inner mb--55">
-            <div className="portfolio-slick-activation mt--30 mt_sm--30">
-              <Slider {...projectSlick2} {...settings}>
-                {ProjectList.map((value, index) => (
-                  <div
-                    className="portfolio portfolio-interior-design"
-                    key={index}
-                  >
-                    <div className="thumbnail-inner">
-                      <div
-                        className={`thumbnail ${value.image}`}
-                        style={{
-                          backgroundImage: `url(/assets/images/portfolio/${value.imageUrl}.jpg)`,
-                        }}
-                      ></div>
-                      <div className={`bg-blr-image ${value.image}`}></div>
-                    </div>
-                    <div className="content">
-                      <div className="inner">
-                        <p>{value.category}</p>
-                        <h4>
-                          <a href="#projects-in-progress">{value.title}</a>
-                        </h4>
-                        <div className="portfolio-button">
-                          <Link className="rn-button-style--3" to="/projects">
-                            Check
-                          </Link>
+            <Link to="/projects">
+              <div className="portfolio-slick-activation mt--30 mt_sm--30">
+                <Slider {...projectSlick2} {...settings}>
+                  {ProjectList.map((value, index) => (
+                    <div
+                      className="portfolio portfolio-interior-design"
+                      key={index}
+                    >
+                      <div className="thumbnail-inner">
+                        <div
+                          className={`thumbnail ${value.image}`}
+                          style={{
+                            backgroundImage: `url(/assets/images/portfolio/${value.imageUrl}.jpg)`,
+                          }}
+                        ></div>
+                        <div className={`bg-blr-image ${value.image}`}></div>
+                      </div>
+                      <div className="content">
+                        <div className="inner">
+                          <p>{value.category}</p>
+                          <h4>
+                            <a href="#projects-in-progress">{value.title}</a>
+                          </h4>
+                          <div className="portfolio-button">
+                            <Link className="rn-button-style--3" to="/projects">
+                              Check
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </Slider>
-            </div>
+                  ))}
+                </Slider>
+              </div>
+            </Link>
           </div>
         </div>
         {/* End projects */}
