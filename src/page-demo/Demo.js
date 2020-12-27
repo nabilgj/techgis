@@ -15,6 +15,7 @@ import {
   slideSlick,
   SlideList,
 } from "../page-demo/script";
+import { render } from "react-dom";
 
 // project scrolling settings
 const settings = {
@@ -38,6 +39,7 @@ const settingsslide = {
 const MainHeader = lazy(() => import("../component/header/MainHeader"));
 const TeamCore = lazy(() => import("../blocks/team/TeamCore"));
 const MainFooter = lazy(() => import("../component/footer/MainFooter"));
+
 const renderLoader = () => <p>Loading</p>;
 
 class Home extends Component {
@@ -91,6 +93,7 @@ class Home extends Component {
         </Suspense> */}
 
         {/* Start Slider Area   */}
+
         <div className="slider-wrapper color-white" id="home">
           <div className="slider-activation slider-digital-agency">
             <Slider
@@ -147,6 +150,7 @@ class Home extends Component {
             </Slider>
           </div>
         </div>
+
         {/* End Slider Area   */}
 
         {/* Start about */}
