@@ -117,7 +117,7 @@ export const SlideList = [
       "We cater technological requirements of the GNSS and Geo Spatial Industry",
     buttonText: "Check Inside",
     buttonLink: "/services",
-    techgisText: "Know TechGIS?",
+    techgisText: "Know GIS",
     techgisLink: "/about",
     color: "#2DAAC2",
   },
@@ -172,38 +172,44 @@ export const SlideList = [
 ];
 
 // into Service
-export const ServiceList = [
+export const ServiceLists = [
   {
+    id: "utilities",
     icon: <FiCast />,
     title: "Utilities",
     description:
       "Telecommunication Towers, Power Transmission and Distribution lines and systems such as towers and sub-stations require periodic maintenance for prevention of break-down.",
   },
   {
+    id: "agriculture",
     icon: <FiLayers />,
     title: "AGRICULTURE",
     description:
       "Geo-spatial technology has shown promising results in agriculture with data-driven integrated pest management, fertilizer application and crop health analysis.",
   },
   {
+    id: "civil-infrastructure",
     icon: <FiUsers />,
     title: "CIVIL & INFRASTRUCTURE",
     description:
       "TECHGIS provides 2D Maps, 3D Maps, Topographical surveillance, Engineering drawings and mapping of civil infrastructure that results in helping the client make a better execution plan.",
   },
   {
+    id: "ports-shipping",
     icon: <FiMonitor />,
     title: "PORTS & SHIPPING AND OIL & GAS",
     description:
       "Scrutiny for piping infrastructure and metal assembly can be effectively managed through TECHGIS UAV surveillance through data acquisition, data processing, data analysis and data sharing.",
   },
   {
+    id: "mining-exploration",
     icon: <FiMonitor />,
     title: "MINING & EXPLORATION",
     description:
       "Geo-spatial technology in mining improve the overall efficiency of large mine site and quarry management by providing accurate and comprehensive data, detailing site conditions in a very short time.",
   },
   {
+    id: "environment-management",
     icon: <FiMonitor />,
     title: "ENVIRONMENT MANAGEMENT",
     description:

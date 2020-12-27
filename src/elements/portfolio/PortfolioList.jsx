@@ -21,7 +21,7 @@ class PortfolioList extends Component {
                 <div className="inner">
                   <p>{value.category}</p>
                   <h4>
-                    <Link>{value.title}</Link>
+                    <Link to="#projects-in-progress">{value.title}</Link>
                   </h4>
                   <div className="portfolio-button">
                     <Link

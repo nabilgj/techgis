@@ -11,12 +11,13 @@ import "./index.scss";
 // Home layout
 import Demo from "./page-demo/Demo";
 
-// Element Layout
 import Projects from "./blocks/Projects";
 import Team from "./blocks/Team.jsx";
 
+// Element Layout
 import About from "./elements/About";
 import Service from "./elements/Service";
+import ServiceDetails from "./elements/ServiceDetails";
 import Contact from "./elements/Contact";
 import error404 from "./elements/error404";
 
@@ -38,6 +39,13 @@ class Root extends Component {
             path={`${process.env.PUBLIC_URL}/services`}
             component={Service}
           />
+
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/service-details/:id`}
+            component={ServiceDetails}
+          />
+
           <Route
             exact
             path={`${process.env.PUBLIC_URL}/projects`}

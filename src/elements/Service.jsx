@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { Link } from "react-router-dom";
+
 import { FiChevronUp } from "react-icons/fi";
 import ScrollToTop from "react-scroll-up";
 
@@ -8,7 +10,7 @@ import PageHelmet from "../component/common/Helmet";
 import Breadcrumb from "../elements/common/Breadcrumb";
 import MainFooter from "../component/footer/MainFooter";
 
-import { ServiceList } from "../page-demo/script";
+import { ServiceLists } from "../page-demo/script";
 
 class Service extends Component {
   constructor(props) {
@@ -46,17 +48,19 @@ class Service extends Component {
               </div>
             </div>
             <div className="row service-one-wrapper">
-              {ServiceList.map((val, i) => (
+              {ServiceLists.map((val, i) => (
                 <div
                   className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"
                   key={i}
                 >
                   <div className="service service__style--2">
-                    <div className="icon">{val.icon}</div>
-                    <div className="content">
-                      <h3 className="title">{val.title}</h3>
-                      <p>{val.description}</p>
-                    </div>
+                    <Link to={`/service-details/${val.id}`}>
+                      <div className="icon">{val.icon}</div>
+                      <div className="content">
+                        <h3 className="title">{val.title}</h3>
+                        <p>{val.description}</p>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               ))}
