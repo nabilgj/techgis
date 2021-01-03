@@ -118,7 +118,7 @@ export const SlideList = [
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know GIS",
-    techgisLink: "/about",
+    techgisLink: "/knowgis",
     color: "#2DAAC2",
   },
   {
@@ -130,7 +130,7 @@ export const SlideList = [
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know GIS",
-    techgisLink: "/about",
+    techgisLink: "/knowgis",
     color: "#2DAAC2",
   },
   {
@@ -142,7 +142,7 @@ export const SlideList = [
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know GIS",
-    techgisLink: "/about",
+    techgisLink: "/knowgis",
     color: "#2DAAC2",
   },
   {
@@ -154,7 +154,7 @@ export const SlideList = [
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know GIS",
-    techgisLink: "/about",
+    techgisLink: "/knowgis",
     color: "#2DAAC2",
   },
   {
@@ -166,7 +166,7 @@ export const SlideList = [
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know GIS",
-    techgisLink: "/about",
+    techgisLink: "/knowgis",
     color: "#2DAAC2",
   },
 ];

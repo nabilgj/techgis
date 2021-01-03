@@ -16,6 +16,7 @@ import Team from "./blocks/Team.jsx";
 
 // Element Layout
 import About from "./elements/About";
+import KnowGIS from "./elements/KnowGIS";
 import Service from "./elements/Service";
 import ServiceDetails from "./elements/ServiceDetails";
 import Contact from "./elements/Contact";
@@ -32,6 +33,12 @@ class Root extends Component {
             exact
             path={`${process.env.PUBLIC_URL}/about`}
             component={About}
+          />
+
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/knowgis`}
+            component={KnowGIS}
           />
 
           <Route
