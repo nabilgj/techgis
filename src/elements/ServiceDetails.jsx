@@ -94,12 +94,30 @@ class ServiceDetails extends Component {
                                   className="title"
                                   style={{ lineHeight: "1.2" }}
                                 >
-                                  Proceess of {list.title}
+                                  Process of {list.title}
                                 </h4>
                                 <ul className="liststyle">
-                                  <li>1st process</li>
-                                  <li>2nd process</li>
-                                  <li>3rd process</li>
+                                  <li>2D Map</li>
+                                  <ul style={{ listStyleType: "none" }}>
+                                    <li>
+                                      Project progress Planning & Monitoring
+                                    </li>
+                                    <li>Insurance Land Parceling Damage &</li>
+                                    <li>condition detection </li>
+                                  </ul>
+                                  <li>3D Map</li>
+                                  <ul style={{ listStyleType: "none" }}>
+                                    <li>Topographical Engineering Drawings</li>
+                                    <li>As-built Drawings</li>
+                                    <li> Digital Elevation Model</li>
+                                    <li> Contour lines </li>
+                                  </ul>
+                                  <li>3D Measurements</li>
+                                  <ul style={{ listStyleType: "none" }}>
+                                    <li> Indoor & Outdoor 3D Measurements </li>
+                                    <li>Open pit excavation measurements</li>
+                                    <li> 3D Models flythrough </li>
+                                  </ul>
                                 </ul>
                               </div>
                             </div>
