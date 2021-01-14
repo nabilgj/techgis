@@ -1,5 +1,13 @@
 import React from "react";
-import { FiCast, FiLayers, FiUsers, FiMonitor } from "react-icons/fi";
+
+import {
+  FaKeycdn,
+  FaGripfire,
+  FaHouzz,
+  FaDocker,
+  FaPiedPiperAlt,
+  FaAirFreshener,
+} from "react-icons/fa";
 
 export const portfolioSlick = {
   dots: true,
@@ -171,56 +179,356 @@ export const SlideList = [
   },
 ];
 
-// into Service
-export const ServiceLists = [
+// into Service details
+export const ServiceLists1 = [
   {
     id: "utilities-",
     imgUrl: "service-01.jpg",
-    icon: <FiCast />,
-    title: "Utilities",
+    icon: <FaKeycdn />,
+    title: "UTILITIES",
+    pro: [
+      {
+        id: " Utility 1",
+        p: [{ id: 1, p: "Power transmission lines" }],
+      },
+      {
+        id: " Utility 2",
+        p: [{ id: 1, p: " Sub-Stations" }],
+      },
+      {
+        id: " Utility 3",
+        p: [{ id: 1, p: "Cell Towers" }],
+      },
+    ],
     description:
       "Telecommunication Towers, Power Transmission and Distribution lines and systems such as towers and sub-stations require periodic maintenance for prevention of break-down.",
   },
   {
     id: "agriculture-",
-    imgUrl: "service-01.jpg",
-    icon: <FiLayers />,
+    imgUrl: "service-03.jpg",
+    icon: <FaGripfire />,
     title: "AGRICULTURE",
+    pro: [
+      {
+        id: " Agri 1",
+        p: [{ id: 1, p: "Data-driven precise pesticide aerial spraying" }],
+      },
+      {
+        id: " Agri 2",
+        p: [{ id: 1, p: "Aerial seeding application " }],
+      },
+      {
+        id: " Agri 3",
+        p: [
+          {
+            id: 1,
+            p:
+              "Aerial fertilizer spreading results in effective farm management thus saving resources",
+          },
+        ],
+      },
+    ],
     description:
       "Geo-spatial technology has shown promising results in agriculture with data-driven integrated pest management, fertilizer application and crop health analysis.",
   },
   {
     id: "civil-infrastructure",
-    imgUrl: "service-01.jpg",
-    icon: <FiUsers />,
+    imgUrl: "service-05.jpg",
+    icon: <FaHouzz />,
     title: "CIVIL & INFRASTRUCTURE",
+    pro: [
+      {
+        id: "2D Map",
+        p: [
+          { id: 1, p: "Project progress Planning & Monitoring" },
+          { id: 2, p: "Insurance Land Parceling Damage &" },
+          { id: 3, p: "condition detection" },
+        ],
+      },
+      {
+        id: "3D Map",
+        p: [
+          { id: 1, p: "Topographical Engineering Drawings" },
+          { id: 2, p: "As-built Drawings" },
+          { id: 3, p: "Digital Elevation Model" },
+          { id: 4, p: "Contour lines" },
+        ],
+      },
+      {
+        id: "3D Measurements",
+        p: [
+          { id: 1, p: "Indoor & Outdoor 3D Measurements" },
+          { id: 2, p: "Open pit excavation measurements" },
+          { id: 3, p: "3D Models flythrough" },
+        ],
+      },
+    ],
     description:
       "TECHGIS provides 2D Maps, 3D Maps, Topographical surveillance, Engineering drawings and mapping of civil infrastructure that results in helping the client make a better execution plan.",
   },
   {
     id: "ports-shipping",
-    imgUrl: "service-01.jpg",
-    icon: <FiMonitor />,
+    imgUrl: "service-07.jpg",
+    icon: <FaDocker />,
     title: "PORTS & SHIPPING AND OIL & GAS",
+    pro: [
+      {
+        id: "Reason 1",
+        p: [
+          { id: 1, p: "Inspection of metal assembly through thermal imagery " },
+        ],
+      },
+      {
+        id: " Reason 2",
+        p: [{ id: 1, p: "it becomes more effective, swift" }],
+      },
+      {
+        id: " Reason 3",
+        p: [{ id: 1, p: "and less hazardous & contains a digitized record" }],
+      },
+    ],
     description:
       "Scrutiny for piping infrastructure and metal assembly can be effectively managed through TECHGIS UAV surveillance through data acquisition, data processing, data analysis and data sharing.",
   },
   {
     id: "mining-exploration",
-    imgUrl: "service-01.jpg",
-    icon: <FiMonitor />,
+    imgUrl: "service-09.jpg",
+    icon: <FaPiedPiperAlt />,
     title: "MINING & EXPLORATION",
+    pro: [
+      {
+        id: " Mining 1",
+        p: [{ id: 1, p: "We provide volumetric analysis at site" }],
+      },
+      {
+        id: " Mining 2",
+        p: [
+          {
+            id: 1,
+            p: "To help the mining companies in determining the true logistics",
+          },
+        ],
+      },
+      {
+        id: " Mining 3",
+        p: [
+          {
+            id: 1,
+            p:
+              "as well as asset management which results in an efficient management of the mining operations",
+          },
+        ],
+      },
+    ],
     description:
       "Geo-spatial technology in mining improve the overall efficiency of large mine site and quarry management by providing accurate and comprehensive data, detailing site conditions in a very short time.",
   },
   {
     id: "environment-management",
-    imgUrl: "service-01.jpg",
+    imgUrl: "service-11.jpg",
+    icon: <FaAirFreshener />,
     title: "ENVIRONMENT MANAGEMENT",
+    pro: [
+      {
+        id: " Utility 1",
+        p: [{ id: 1, p: "Calculation of oxygen level" }],
+      },
+      {
+        id: " Utility 2",
+        p: [{ id: 1, p: "Vegetation index" }],
+      },
+      {
+        id: " Utility 3",
+        p: [{ id: 1, p: "and soil" }],
+      },
+    ],
     description:
       "Climate change is a global phenomenon with a high probability to greatly impact many countries. TECHGIS believes in developing technological solutions for a safer and sustainable environment.",
   },
 ];
+// into Service details
+export const ServiceLists2 = [
+  {
+    id: "utilities-",
+    imgUrl2: "service-02.jpg",
+    icon: <FaKeycdn />,
+    title: "UTILITIES",
+    pro: [
+      {
+        id: " Utility 1",
+        p: [{ id: 1, p: "Power transmission lines" }],
+      },
+      {
+        id: " Utility 2",
+        p: [{ id: 1, p: " Sub-Stations" }],
+      },
+      {
+        id: " Utility 3",
+        p: [{ id: 1, p: "Cell Towers" }],
+      },
+    ],
+    description:
+      "Tech-GIS provides inspection services based on thermal imagery for better inspection and maintenance purpose.",
+  },
+  {
+    id: "agriculture-",
+    imgUrl2: "service-04.jpg",
+    icon: <FaGripfire />,
+    title: "AGRICULTURE",
+    pro: [
+      {
+        id: " Agri 1",
+        p: [{ id: 1, p: "Data-driven precise pesticide aerial spraying" }],
+      },
+      {
+        id: " Agri 2",
+        p: [{ id: 1, p: "Aerial seeding application " }],
+      },
+      {
+        id: " Agri 3",
+        p: [
+          {
+            id: 1,
+            p:
+              "Aerial fertilizer spreading results in effective farm management thus saving resources",
+          },
+        ],
+      },
+    ],
+    description:
+      "Satellite based farm management E-portal helps the farmer in making intelligent data driven smart decisions timely.",
+  },
+  {
+    id: "civil-infrastructure",
+    imgUrl2: "service-06.jpg",
+    icon: <FaHouzz />,
+    title: "CIVIL & INFRASTRUCTURE",
+    pro: [
+      {
+        id: "2D Map",
+        p: [
+          { id: 1, p: "Project progress Planning & Monitoring" },
+          { id: 2, p: "Insurance Land Parceling Damage &" },
+          { id: 3, p: "condition detection" },
+        ],
+      },
+      {
+        id: "3D Map",
+        p: [
+          { id: 1, p: "Topographical Engineering Drawings" },
+          { id: 2, p: "As-built Drawings" },
+          { id: 3, p: "Digital Elevation Model" },
+          { id: 4, p: "Contour lines" },
+        ],
+      },
+      {
+        id: "3D Measurements",
+        p: [
+          { id: 1, p: "Indoor & Outdoor 3D Measurements" },
+          { id: 2, p: "Open pit excavation measurements" },
+          { id: 3, p: "3D Models flythrough" },
+        ],
+      },
+    ],
+    description:
+      "Orthomosaic Tiles, Point Cloud Imagery, data processing, data management, data translation and data sharing, with an in-house built solution architecture for end clients.",
+  },
+  {
+    id: "ports-shipping",
+    imgUrl2: "service-08.jpg",
+    icon: <FaDocker />,
+    title: "PORTS & SHIPPING AND OIL & GAS",
+    pro: [
+      {
+        id: "Reason 1",
+        p: [
+          { id: 1, p: "Inspection of metal assembly through thermal imagery " },
+        ],
+      },
+      {
+        id: " Reason 2",
+        p: [{ id: 1, p: "it becomes more effective, swift" }],
+      },
+      {
+        id: " Reason 3",
+        p: [{ id: 1, p: "and less hazardous & contains a digitized record" }],
+      },
+    ],
+    description:
+      "Remote Sensing and GIS finds useful applications in Port & Shipping as well as Oil & Gas sector. An online web-portal keep track of operations and asset management becomes easier.",
+  },
+  {
+    id: "mining-exploration",
+    imgUrl2: "service-10.jpg",
+    icon: <FaPiedPiperAlt />,
+    title: "MINING & EXPLORATION",
+    pro: [
+      {
+        id: " Mining 1",
+        p: [{ id: 1, p: "We provide volumetric analysis at site" }],
+      },
+      {
+        id: " Mining 2",
+        p: [
+          {
+            id: 1,
+            p: "To help the mining companies in determining the true logistics",
+          },
+        ],
+      },
+      {
+        id: " Mining 3",
+        p: [
+          {
+            id: 1,
+            p:
+              "as well as asset management which results in an efficient management of the mining operations",
+          },
+        ],
+      },
+    ],
+    description:
+      "Tech-GIS geo-spatial services and applications can provide volumetric analysis at site, thereby helping the mining company in determining the true logistics as well as asset management which results in an efficient management of the mining operations",
+  },
+  {
+    id: "environment-management",
+    imgUrl2: "service-12.jpg",
+    icon: <FaAirFreshener />,
+    title: "ENVIRONMENT MANAGEMENT",
+    pro: [
+      {
+        id: " Utility 1",
+        p: [{ id: 1, p: "Calculation of oxygen level" }],
+      },
+      {
+        id: " Utility 2",
+        p: [{ id: 1, p: "Vegetation index, soil moisture levels" }],
+      },
+      {
+        id: " Utility 3",
+        p: [
+          {
+            id: 1,
+            p:
+              "air-pollution index, mapping of underground natural water reservoirs",
+          },
+        ],
+      },
+      {
+        id: " Utility 3",
+        p: [
+          {
+            id: 1,
+            p: "and wild-life monitoring, plant & tree count",
+          },
+        ],
+      },
+    ],
+    description:
+      "Tech-GIS provides geo-spatial applications for environment management such as",
+  },
+];
+
 export const ServiceListVideos = [
   {
     id: "utilities-",

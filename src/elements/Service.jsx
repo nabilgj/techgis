@@ -10,7 +10,7 @@ import PageHelmet from "../component/common/Helmet";
 import Breadcrumb from "../elements/common/Breadcrumb";
 import MainFooter from "../component/footer/MainFooter";
 
-import { ServiceLists } from "../page-demo/script";
+import { ServiceLists1 } from "../page-demo/script";
 
 class Service extends Component {
   constructor(props) {
@@ -48,7 +48,7 @@ class Service extends Component {
               </div>
             </div>
             <div className="row service-one-wrapper">
-              {ServiceLists.map((val, i) => (
+              {ServiceLists1.map((val, i) => (
                 <div
                   className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"
                   key={i}

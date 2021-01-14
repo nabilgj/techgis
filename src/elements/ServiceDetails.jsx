@@ -10,7 +10,7 @@ import { FiChevronUp } from "react-icons/fi";
 
 import MainFooter from "../component/footer/MainFooter";
 
-import { ServiceLists, ServiceListVideos } from "../page-demo/script";
+import { ServiceLists1, ServiceLists2 } from "../page-demo/script";
 
 class ServiceDetails extends Component {
   constructor() {
@@ -39,11 +39,16 @@ class ServiceDetails extends Component {
 
   render() {
     const serviceID = this.props.match.params.id;
-    const serviceList = ServiceLists.filter((serve) => serve.id === serviceID);
-
-    const serviceListVideos = ServiceListVideos.filter(
-      (video) => video.id === serviceID
+    const serviceList1 = ServiceLists1.filter(
+      (serve) => serve.id === serviceID
     );
+    const serviceList2 = ServiceLists2.filter(
+      (serve) => serve.id === serviceID
+    );
+
+    // const serviceListVideos = ServiceListVideos.filter(
+    //   (video) => video.id === serviceID
+    // );
 
     let bread1 = serviceID.split("-")[0];
     let bread2 = serviceID.split("-")[1];
@@ -51,7 +56,7 @@ class ServiceDetails extends Component {
     bread1 = bread1.charAt(0).toUpperCase() + bread1.slice(1);
     bread2 = bread2.charAt(0).toUpperCase() + bread2.slice(1);
 
-    const bread = [bread1, bread2].join(" & ");
+    const bread = [bread1, bread2].join(" ");
 
     return (
       <React.Fragment>
@@ -69,8 +74,8 @@ class ServiceDetails extends Component {
                   <div className="inner">
                     {/* Start Single Area */}
 
-                    {serviceList &&
-                      serviceList.map((list) => {
+                    {serviceList1 &&
+                      serviceList1.map((list) => {
                         return (
                           <div
                             className="row sercice-details-content pb--80 align-items-center"
@@ -96,29 +101,23 @@ class ServiceDetails extends Component {
                                 >
                                   Process of {list.title}
                                 </h4>
-                                <ul className="liststyle">
-                                  <li>2D Map</li>
-                                  <ul style={{ listStyleType: "none" }}>
-                                    <li>
-                                      Project progress Planning & Monitoring
-                                    </li>
-                                    <li>Insurance Land Parceling Damage &</li>
-                                    <li>condition detection </li>
-                                  </ul>
-                                  <li>3D Map</li>
-                                  <ul style={{ listStyleType: "none" }}>
-                                    <li>Topographical Engineering Drawings</li>
-                                    <li>As-built Drawings</li>
-                                    <li> Digital Elevation Model</li>
-                                    <li> Contour lines </li>
-                                  </ul>
-                                  <li>3D Measurements</li>
-                                  <ul style={{ listStyleType: "none" }}>
-                                    <li> Indoor & Outdoor 3D Measurements </li>
-                                    <li>Open pit excavation measurements</li>
-                                    <li> 3D Models flythrough </li>
-                                  </ul>
-                                </ul>
+                                {list.pro.map((process) => {
+                                  return (
+                                    <ul className="liststyle">
+                                      <li>{process.id}</li>
+                                      {process.p &&
+                                        process.p.map((pro) => {
+                                          return (
+                                            <ol
+                                              style={{ listStyleType: "none" }}
+                                            >
+                                              <li> {pro.p} </li>
+                                            </ol>
+                                          );
+                                        })}
+                                    </ul>
+                                  );
+                                })}
                               </div>
                             </div>
                           </div>
@@ -126,51 +125,47 @@ class ServiceDetails extends Component {
                       })}
                     {/* End Single Area */}
 
-                    {/* Start Single Area */}
-                    {serviceListVideos &&
-                      serviceListVideos.map((video) => {
+                    {serviceList2 &&
+                      serviceList2.map((list) => {
                         return (
                           <div
-                            className="row sercice-details-content align-items-center"
-                            key={video.id}
+                            className="row sercice-details-content pb--80 align-items-center"
+                            key={list.id}
                           >
-                            <div className="col-lg-6 col-12 order-2 order-lg-1">
+                            <div className="col-lg-6 col-12">
                               <div className="details mt_md--30 mt_sm--30">
-                                <p>
-                                  You can explain anything about the the video
-                                  that will educate user.
-                                </p>
-                                <h4 className="title">Our Working Process</h4>
-                                <ul className="liststyle">
-                                  <li>Working process 1</li>
-                                  <li>Working process 2</li>
-                                  <li>Working process 3</li>
-                                </ul>
+                                <p>{list.description}</p>
+
+                                <h4
+                                  className="title"
+                                  style={{ lineHeight: "1.2" }}
+                                >
+                                  Process of {list.title}
+                                </h4>
+                                {list.pro.map((process) => {
+                                  return (
+                                    <ul className="liststyle">
+                                      <li>{process.id}</li>
+                                      {process.p.map((pro) => {
+                                        return (
+                                          <ol style={{ listStyleType: "none" }}>
+                                            <li> {pro.p} </li>
+                                          </ol>
+                                        );
+                                      })}
+                                    </ul>
+                                  );
+                                })}
                               </div>
                             </div>
 
-                            <div className="col-lg-6 col-12 order-1 order-lg-2">
-                              <div className="thumb position-relative">
+                            <div className="col-lg-6 col-12">
+                              <div className="thumb">
                                 <img
                                   className="w-100"
-                                  src={`/assets/images/service/${video.videoImgUrl}`}
+                                  src={`/assets/images/service/${list.imgUrl2}`}
                                   alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
                                 />
-                                <ModalVideo
-                                  isOpen={this.state.isOpen}
-                                  channel="custom"
-                                  allowFullScreen
-                                  url={`/assets/images/service/${video.video}`}
-                                  onClose={() =>
-                                    this.setState({ isOpen: false })
-                                  }
-                                />
-                                <button
-                                  className="video-popup"
-                                  onClick={this.openModal}
-                                >
-                                  <span className="play-icon"></span>
-                                </button>
                               </div>
                             </div>
                           </div>
