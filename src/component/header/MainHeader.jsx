@@ -118,9 +118,9 @@ class MainHeader extends Component {
                 </li>
 
                 <li>
-                  <a href="#contact" onClick={this.CLoseMenuTrigger}>
+                  <Link to="/contact" onClick={this.CLoseMenuTrigger}>
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </Scrollspy>
             </nav>

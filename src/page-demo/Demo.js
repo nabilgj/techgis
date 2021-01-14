@@ -156,6 +156,7 @@ class Home extends Component {
         {/* Start about */}
         <div
           className="service-area creative-service-wrapper ptb--120 bg_color--1"
+          // className="rn-content-box-area rn-content-box-style--1 pb--120 bg_color--1"
           id="about"
         >
           <div className="container">
@@ -186,12 +187,6 @@ class Home extends Component {
                 >
                   <Link to="/about">
                     <div className="service service__style--1">
-                      <div className="icon">
-                        {/* <img
-                          src={`/assets/images/icons/${val.icon}`}
-                          alt="Service Icon"
-                        /> */}
-                      </div>
                       <div className="content">
                         <h4 className="title">{val.title}</h4>
                         <p className="subtitle">{val.description}</p>
