@@ -79,6 +79,29 @@ class Team extends React.Component {
             </div>
           </div>
           {/* End Team Area  */}
+
+          {/* Start Team Structure  */}
+          <div className="rn-team-wrapper ptb--120 bg_color--1">
+            <div className="rn-team-area">
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-12">
+                    <div className="section-title text-center mb--30">
+                      <h2> Team Structure </h2>
+                      <div className="thumb">
+                        <img
+                          className="w-100"
+                          src={`/assets/images/team/teamstructure.jpeg`}
+                          alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* End Team Area  */}
         </main>
         {/* End Page Wrapper  */}
 

@@ -122,7 +122,7 @@ export const SlideList = [
     bgImage: "bg_image--21",
     title: "TechGIS",
     description:
-      "We cater technological requirements of the GNSS and Geo Spatial Industry",
+      "Technology based data companies will shape the future of our Planet. Syed Irtazah Ali",
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know GIS",
@@ -188,16 +188,21 @@ export const ServiceLists1 = [
     title: "UTILITIES",
     pro: [
       {
-        id: " Utility 1",
-        p: [{ id: 1, p: "Power transmission lines" }],
+        id: 1,
+        p:
+          "Thermal Mapping of Wind Turbines, Towers, Solar Panels & Power Lines",
       },
       {
-        id: " Utility 2",
-        p: [{ id: 1, p: " Sub-Stations" }],
+        id: 2,
+        p: "Rust Inspection of Towers, Turbines, Panels & Lines",
       },
       {
-        id: " Utility 3",
-        p: [{ id: 1, p: "Cell Towers" }],
+        id: 3,
+        p: "2D, 3D Drawing",
+      },
+      {
+        id: 4,
+        p: "Monitoring & Surveillance for inspection",
       },
     ],
     description:
@@ -210,22 +215,21 @@ export const ServiceLists1 = [
     title: "AGRICULTURE",
     pro: [
       {
-        id: " Agri 1",
-        p: [{ id: 1, p: "Data-driven precise pesticide aerial spraying" }],
+        id: 1,
+        p:
+          "Thermal Mapping of Wind Turbines, Towers, Solar Panels & Power Lines",
       },
       {
-        id: " Agri 2",
-        p: [{ id: 1, p: "Aerial seeding application " }],
+        id: 2,
+        p: "Rust Inspection of Towers, Turbines, Panels & Lines",
       },
       {
-        id: " Agri 3",
-        p: [
-          {
-            id: 1,
-            p:
-              "Aerial fertilizer spreading results in effective farm management thus saving resources",
-          },
-        ],
+        id: 3,
+        p: "2D, 3D Drawing",
+      },
+      {
+        id: 4,
+        p: "Monitoring & Surveillance for inspection",
       },
     ],
     description:
@@ -238,29 +242,48 @@ export const ServiceLists1 = [
     title: "CIVIL & INFRASTRUCTURE",
     pro: [
       {
-        id: "2D Map",
-        p: [
-          { id: 1, p: "Project progress Planning & Monitoring" },
-          { id: 2, p: "Insurance Land Parceling Damage &" },
-          { id: 3, p: "condition detection" },
-        ],
+        id: 1,
+        p: "Digital Elevation Model",
       },
       {
-        id: "3D Map",
-        p: [
-          { id: 1, p: "Topographical Engineering Drawings" },
-          { id: 2, p: "As-built Drawings" },
-          { id: 3, p: "Digital Elevation Model" },
-          { id: 4, p: "Contour lines" },
-        ],
+        id: 2,
+        p: "Topographic Survey",
       },
       {
-        id: "3D Measurements",
-        p: [
-          { id: 1, p: "Indoor & Outdoor 3D Measurements" },
-          { id: 2, p: "Open pit excavation measurements" },
-          { id: 3, p: "3D Models flythrough" },
-        ],
+        id: 3,
+        p: "As-built Drawings",
+      },
+      {
+        id: 4,
+        p: "2D Orthomosaic Maps, 3D Maps/ Models",
+      },
+      {
+        id: 5,
+        p: "Point Cloud Imagery, Contour Lines",
+      },
+      {
+        id: 6,
+        p: "Surveying & Mapping (Digitized Cadastral)",
+      },
+      {
+        id: 7,
+        p: "Project Progress Monitoring",
+      },
+      {
+        id: 8,
+        p: "GDPS Ground Surveillance",
+      },
+      {
+        id: 9,
+        p: "Development of Spatial Data Infrastructure",
+      },
+      {
+        id: 10,
+        p: "Infrastructure Planning & Management",
+      },
+      {
+        id: 11,
+        p: "Statistics & Digital Data Archiving",
       },
     ],
     description:
@@ -273,18 +296,24 @@ export const ServiceLists1 = [
     title: "PORTS & SHIPPING AND OIL & GAS",
     pro: [
       {
-        id: "Reason 1",
-        p: [
-          { id: 1, p: "Inspection of metal assembly through thermal imagery " },
-        ],
+        id: 1,
+        p: "Thermal Mapping of Inventory, Lines",
       },
       {
-        id: " Reason 2",
-        p: [{ id: 1, p: "it becomes more effective, swift" }],
+        id: 2,
+        p: "Asset Management",
       },
       {
-        id: " Reason 3",
-        p: [{ id: 1, p: "and less hazardous & contains a digitized record" }],
+        id: 3,
+        p: "Rust Inspection of metal assemblyt",
+      },
+      {
+        id: 4,
+        p: "2D, 3D Drawing",
+      },
+      {
+        id: 5,
+        p: "Monitoring & Surveillance for inspection",
       },
     ],
     description:
@@ -297,27 +326,24 @@ export const ServiceLists1 = [
     title: "MINING & EXPLORATION",
     pro: [
       {
-        id: " Mining 1",
-        p: [{ id: 1, p: "We provide volumetric analysis at site" }],
+        id: 1,
+        p: "Methane check & safety of miners",
       },
       {
-        id: " Mining 2",
-        p: [
-          {
-            id: 1,
-            p: "To help the mining companies in determining the true logistics",
-          },
-        ],
+        id: 2,
+        p: "Pipeline monitoring",
       },
       {
-        id: " Mining 3",
-        p: [
-          {
-            id: 1,
-            p:
-              "as well as asset management which results in an efficient management of the mining operations",
-          },
-        ],
+        id: 3,
+        p: "Volumetric Stock-pile Analysis",
+      },
+      {
+        id: 4,
+        p: "Water & Sediment Flow",
+      },
+      {
+        id: 5,
+        p: "Assessment pre-drilling and post-drilling and blasting ",
       },
     ],
     description:
@@ -330,16 +356,28 @@ export const ServiceLists1 = [
     title: "ENVIRONMENT MANAGEMENT",
     pro: [
       {
-        id: " Utility 1",
-        p: [{ id: 1, p: "Calculation of oxygen level" }],
+        id: 1,
+        p: "Plant & Tree Count",
       },
       {
-        id: " Utility 2",
-        p: [{ id: 1, p: "Vegetation index" }],
+        id: 2,
+        p: "Vegetation Index",
       },
       {
-        id: " Utility 3",
-        p: [{ id: 1, p: "and soil" }],
+        id: 3,
+        p: "Air Quality Measurement",
+      },
+      {
+        id: 4,
+        p: "Geo-referenced water reservoirs",
+      },
+      {
+        id: 5,
+        p: "Geo-referenced wild life monitoring",
+      },
+      {
+        id: 6,
+        p: "Oxygen Levels, Carbon Levels",
       },
     ],
     description:
@@ -350,180 +388,59 @@ export const ServiceLists1 = [
 export const ServiceLists2 = [
   {
     id: "utilities-",
-    imgUrl2: "service-02.jpg",
+    imgUrl2: "service-101.png",
+    imgUrl3: "service-102.png",
     icon: <FaKeycdn />,
     title: "UTILITIES",
-    pro: [
-      {
-        id: " Utility 1",
-        p: [{ id: 1, p: "Power transmission lines" }],
-      },
-      {
-        id: " Utility 2",
-        p: [{ id: 1, p: " Sub-Stations" }],
-      },
-      {
-        id: " Utility 3",
-        p: [{ id: 1, p: "Cell Towers" }],
-      },
-    ],
     description:
       "Tech-GIS provides inspection services based on thermal imagery for better inspection and maintenance purpose.",
   },
   {
     id: "agriculture-",
-    imgUrl2: "service-04.jpg",
+    imgUrl2: "service-101.png",
+    imgUrl3: "service-102.png",
     icon: <FaGripfire />,
     title: "AGRICULTURE",
-    pro: [
-      {
-        id: " Agri 1",
-        p: [{ id: 1, p: "Data-driven precise pesticide aerial spraying" }],
-      },
-      {
-        id: " Agri 2",
-        p: [{ id: 1, p: "Aerial seeding application " }],
-      },
-      {
-        id: " Agri 3",
-        p: [
-          {
-            id: 1,
-            p:
-              "Aerial fertilizer spreading results in effective farm management thus saving resources",
-          },
-        ],
-      },
-    ],
+
     description:
       "Satellite based farm management E-portal helps the farmer in making intelligent data driven smart decisions timely.",
   },
   {
     id: "civil-infrastructure",
-    imgUrl2: "service-06.jpg",
+    imgUrl2: "service-101.png",
+    imgUrl3: "service-102.png",
     icon: <FaHouzz />,
     title: "CIVIL & INFRASTRUCTURE",
-    pro: [
-      {
-        id: "2D Map",
-        p: [
-          { id: 1, p: "Project progress Planning & Monitoring" },
-          { id: 2, p: "Insurance Land Parceling Damage &" },
-          { id: 3, p: "condition detection" },
-        ],
-      },
-      {
-        id: "3D Map",
-        p: [
-          { id: 1, p: "Topographical Engineering Drawings" },
-          { id: 2, p: "As-built Drawings" },
-          { id: 3, p: "Digital Elevation Model" },
-          { id: 4, p: "Contour lines" },
-        ],
-      },
-      {
-        id: "3D Measurements",
-        p: [
-          { id: 1, p: "Indoor & Outdoor 3D Measurements" },
-          { id: 2, p: "Open pit excavation measurements" },
-          { id: 3, p: "3D Models flythrough" },
-        ],
-      },
-    ],
+
     description:
       "Orthomosaic Tiles, Point Cloud Imagery, data processing, data management, data translation and data sharing, with an in-house built solution architecture for end clients.",
   },
   {
     id: "ports-shipping",
-    imgUrl2: "service-08.jpg",
+    imgUrl2: "service-101.png",
+    imgUrl3: "service-102.png",
     icon: <FaDocker />,
     title: "PORTS & SHIPPING AND OIL & GAS",
-    pro: [
-      {
-        id: "Reason 1",
-        p: [
-          { id: 1, p: "Inspection of metal assembly through thermal imagery " },
-        ],
-      },
-      {
-        id: " Reason 2",
-        p: [{ id: 1, p: "it becomes more effective, swift" }],
-      },
-      {
-        id: " Reason 3",
-        p: [{ id: 1, p: "and less hazardous & contains a digitized record" }],
-      },
-    ],
+
     description:
       "Remote Sensing and GIS finds useful applications in Port & Shipping as well as Oil & Gas sector. An online web-portal keep track of operations and asset management becomes easier.",
   },
   {
     id: "mining-exploration",
-    imgUrl2: "service-10.jpg",
+    imgUrl2: "service-101.png",
+    imgUrl3: "service-102.png",
     icon: <FaPiedPiperAlt />,
     title: "MINING & EXPLORATION",
-    pro: [
-      {
-        id: " Mining 1",
-        p: [{ id: 1, p: "We provide volumetric analysis at site" }],
-      },
-      {
-        id: " Mining 2",
-        p: [
-          {
-            id: 1,
-            p: "To help the mining companies in determining the true logistics",
-          },
-        ],
-      },
-      {
-        id: " Mining 3",
-        p: [
-          {
-            id: 1,
-            p:
-              "as well as asset management which results in an efficient management of the mining operations",
-          },
-        ],
-      },
-    ],
+
     description:
       "Tech-GIS geo-spatial services and applications can provide volumetric analysis at site, thereby helping the mining company in determining the true logistics as well as asset management which results in an efficient management of the mining operations",
   },
   {
     id: "environment-management",
-    imgUrl2: "service-12.jpg",
+    imgUrl2: "service-101.png",
+    imgUrl3: "service-102.png",
     icon: <FaAirFreshener />,
     title: "ENVIRONMENT MANAGEMENT",
-    pro: [
-      {
-        id: " Utility 1",
-        p: [{ id: 1, p: "Calculation of oxygen level" }],
-      },
-      {
-        id: " Utility 2",
-        p: [{ id: 1, p: "Vegetation index, soil moisture levels" }],
-      },
-      {
-        id: " Utility 3",
-        p: [
-          {
-            id: 1,
-            p:
-              "air-pollution index, mapping of underground natural water reservoirs",
-          },
-        ],
-      },
-      {
-        id: " Utility 3",
-        p: [
-          {
-            id: 1,
-            p: "and wild-life monitoring, plant & tree count",
-          },
-        ],
-      },
-    ],
     description:
       "Tech-GIS provides geo-spatial applications for environment management such as",
   },

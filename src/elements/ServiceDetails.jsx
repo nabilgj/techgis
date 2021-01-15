@@ -99,22 +99,12 @@ class ServiceDetails extends Component {
                                   className="title"
                                   style={{ lineHeight: "1.2" }}
                                 >
-                                  Process of {list.title}
+                                  DELIVERABLES
                                 </h4>
                                 {list.pro.map((process) => {
                                   return (
                                     <ul className="liststyle">
-                                      <li>{process.id}</li>
-                                      {process.p &&
-                                        process.p.map((pro) => {
-                                          return (
-                                            <ol
-                                              style={{ listStyleType: "none" }}
-                                            >
-                                              <li> {pro.p} </li>
-                                            </ol>
-                                          );
-                                        })}
+                                      <li key={process.id}> {process.p} </li>
                                     </ul>
                                   );
                                 })}
@@ -132,30 +122,25 @@ class ServiceDetails extends Component {
                             className="row sercice-details-content pb--80 align-items-center"
                             key={list.id}
                           >
-                            <div className="col-lg-6 col-12">
+                            <div className="col-lg-12 col-12">
                               <div className="details mt_md--30 mt_sm--30">
-                                <p>{list.description}</p>
-
                                 <h4
                                   className="title"
-                                  style={{ lineHeight: "1.2" }}
+                                  style={{
+                                    lineHeight: "1.2",
+                                  }}
                                 >
-                                  Process of {list.title}
+                                  Workflow
                                 </h4>
-                                {list.pro.map((process) => {
-                                  return (
-                                    <ul className="liststyle">
-                                      <li>{process.id}</li>
-                                      {process.p.map((pro) => {
-                                        return (
-                                          <ol style={{ listStyleType: "none" }}>
-                                            <li> {pro.p} </li>
-                                          </ol>
-                                        );
-                                      })}
-                                    </ul>
-                                  );
-                                })}
+                              </div>
+                            </div>
+                            <div className="col-lg-6 col-12">
+                              <div className="thumb">
+                                <img
+                                  className="w-100"
+                                  src={`/assets/images/service/${list.imgUrl2}`}
+                                  alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
+                                />
                               </div>
                             </div>
 
@@ -163,7 +148,7 @@ class ServiceDetails extends Component {
                               <div className="thumb">
                                 <img
                                   className="w-100"
-                                  src={`/assets/images/service/${list.imgUrl2}`}
+                                  src={`/assets/images/service/${list.imgUrl3}`}
                                   alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
                                 />
                               </div>
