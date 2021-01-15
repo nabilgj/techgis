@@ -397,8 +397,8 @@ export const ServiceLists2 = [
   },
   {
     id: "agriculture-",
-    imgUrl2: "service-101.png",
-    imgUrl3: "service-102.png",
+    imgUrl2: "service-103.png",
+    imgUrl3: "service-104.png",
     icon: <FaGripfire />,
     title: "AGRICULTURE",
 

@@ -6,16 +6,25 @@ import {
   FaInstagram,
   FaFacebookF,
   FaLinkedinIn,
+  FaYoutube,
 } from "react-icons/fa";
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
   {
-    Social: <FaLinkedinIn />,
+    social: <FaLinkedinIn />,
     link: "https://www.linkedin.com/in/sajjad-sardar/",
   },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/" },
-  { Social: <FaTwitter />, link: "https://twitter.com/" },
+  { social: <FaInstagram />, link: "https://www.instagram.com/tech_gis/" },
+  { social: <FaTwitter />, link: "https://twitter.com/" },
+  {
+    social: <FaYoutube />,
+    link:
+      "https://www.youtube.com/channel/UCsgaByDryd_VPhn9eFh80IA?guided_help_flow=5",
+  },
+  {
+    social: <FaFacebookF />,
+    link: "https://www.facebook.com/home.php?ref=wizard",
+  },
 ];
 
 const MainFooter = () => {
@@ -59,7 +68,7 @@ const MainFooter = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {val.Social}
+                      {val.social}
                     </a>
                   </li>
                 ))}

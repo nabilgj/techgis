@@ -55,7 +55,7 @@ class MainHeader extends Component {
           <div className="header-left">
             <div className="logo">
               <Link to="/">
-                <p
+                {/* <p
                   style={{
                     color: "white",
                   }}
@@ -68,7 +68,8 @@ class MainHeader extends Component {
                   >
                     GIS
                   </span>
-                </p>
+                </p> */}
+                <img src="/assets/images/logo/logo.png" alt="tech gis logo" />
               </Link>
             </div>
           </div>
