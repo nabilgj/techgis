@@ -91,7 +91,7 @@
       a {
         img {
           @media #{$sm-layout} {
-            width: 120px;
+            width: 60px;
           }
         }
       }
@@ -253,7 +253,7 @@
       .logo {
         a {
           img {
-            height: 50px;
+            height: 5px;
             color: white !important;
             &.logo-1 {
               display: none;

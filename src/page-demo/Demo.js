@@ -162,7 +162,7 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-8">
-                <div className="content">
+                <div className="content mb--30">
                   <h2 className="title"> Our History </h2>
                   <p>
                     Witness to the havoc created by the swarms of Locusts in the
@@ -238,7 +238,7 @@ class Home extends Component {
                 />
               </div>
             </div>
-            <div className="col-lg-12 col-xl-6 mt_lg--50 mt_md--30 mt_sm--30">
+            <div className="col-lg-12 col-xl-6 mt_lg--50 mt_md--30 mt_sm--30 mb--30">
               <div className="content">
                 <h2 className="title"> Service & Solutions </h2>
                 <h4 className="fontWeight500">

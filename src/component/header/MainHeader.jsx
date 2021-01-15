@@ -52,24 +52,15 @@ class MainHeader extends Component {
     return (
       <header className="header-area formobile-menu header--fixed">
         <div className="header-wrapper" id="header-wrapper">
-          <div className="header-left">
+          <div className="header-left inner">
             <div className="logo">
               <Link to="/">
-                {/* <p
-                  style={{
-                    color: "white",
-                  }}
-                >
-                  Tech
-                  <span
-                    style={{
-                      color: "#2DAAC2",
-                    }}
-                  >
-                    GIS
-                  </span>
-                </p> */}
-                <img src="/assets/images/logo/logo.png" alt="tech gis logo" />
+                <img
+                  src="/assets/images/logo/logo.png"
+                  alt="tech gis logo"
+                  width="150px"
+                  height="50px"
+                />
               </Link>
             </div>
           </div>

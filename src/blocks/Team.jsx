@@ -39,8 +39,13 @@ class Team extends React.Component {
                     <div className="section-title text-center mb--30">
                       <h2> Advisors & Consultants </h2>
                       <p>
-                        some text will appear here to define some expertese of
-                        the advisors and consultants team
+                        Our Advisors, Consultants and Mentors form the backbone
+                        of our organisation. The individuals are a part of
+                        prestigious international and national organisations,
+                        academic institutions and research organizations. Our
+                        pool of mentors remain in constant touch for
+                        intellectual development of our core technical
+                        competence.
                       </p>
                     </div>
                   </div>
@@ -64,8 +69,10 @@ class Team extends React.Component {
                     <div className="section-title text-center mb--30">
                       <h2> Core Team </h2>
                       <p>
-                        some text will appear here to define some expertese of
-                        the core team
+                        Our core team comprise of highly qualified professionals
+                        with strong administrative, management and leadership
+                        roles spread across a spectrum of sectors with diverse
+                        range of services and applications.
                       </p>
                     </div>
                   </div>
