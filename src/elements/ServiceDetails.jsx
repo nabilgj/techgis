@@ -10,7 +10,11 @@ import { FiChevronUp } from "react-icons/fi";
 
 import MainFooter from "../component/footer/MainFooter";
 
-import { ServiceLists1, ServiceLists2 } from "../page-demo/script";
+import {
+  ServiceLists1,
+  ServiceLists2,
+  ServiceLists3,
+} from "../page-demo/script";
 
 class ServiceDetails extends Component {
   constructor() {
@@ -39,10 +43,16 @@ class ServiceDetails extends Component {
 
   render() {
     const serviceID = this.props.match.params.id;
+
     const serviceList1 = ServiceLists1.filter(
       (serve) => serve.id === serviceID
     );
+
     const serviceList2 = ServiceLists2.filter(
+      (serve) => serve.id === serviceID
+    );
+
+    const serviceList3 = ServiceLists3.filter(
       (serve) => serve.id === serviceID
     );
 
@@ -149,6 +159,49 @@ class ServiceDetails extends Component {
                                 <img
                                   className="w-100"
                                   src={`/assets/images/service/${list.imgUrl3}`}
+                                  alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    {/* End Single Area */}
+
+                    {serviceList3 &&
+                      serviceList3.map((list) => {
+                        return (
+                          <div
+                            className="row sercice-details-content pb--80 align-items-center"
+                            key={list.id}
+                          >
+                            <div className="col-lg-12 col-12">
+                              <div className="details mt_md--30 mt_sm--30">
+                                {/* <h4
+                                  className="title"
+                                  style={{
+                                    lineHeight: "1.2",
+                                  }}
+                                >
+                                  Workflow
+                                </h4> */}
+                              </div>
+                            </div>
+                            <div className="col-lg-6 col-12">
+                              <div className="thumb">
+                                <img
+                                  className="w-100"
+                                  src={`/assets/images/service/${list.imgUrl4}`}
+                                  alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
+                                />
+                              </div>
+                            </div>
+
+                            <div className="col-lg-6 col-12">
+                              <div className="thumb">
+                                <img
+                                  className="w-100"
+                                  src={`/assets/images/service/${list.imgUrl5}`}
                                   alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
                                 />
                               </div>

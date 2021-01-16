@@ -384,6 +384,7 @@ export const ServiceLists1 = [
       "Climate change is a global phenomenon with a high probability to greatly impact many countries. TECHGIS believes in developing technological solutions for a safer and sustainable environment.",
   },
 ];
+
 // into Service details
 export const ServiceLists2 = [
   {
@@ -397,8 +398,8 @@ export const ServiceLists2 = [
   },
   {
     id: "agriculture-",
-    imgUrl2: "service-103.png",
-    imgUrl3: "service-104.png",
+    imgUrl2: "service-101.png",
+    imgUrl3: "service-102.png",
     icon: <FaGripfire />,
     title: "AGRICULTURE",
 
@@ -443,6 +444,19 @@ export const ServiceLists2 = [
     title: "ENVIRONMENT MANAGEMENT",
     description:
       "Tech-GIS provides geo-spatial applications for environment management such as",
+  },
+];
+// into Service details
+export const ServiceLists3 = [
+  {
+    id: "agriculture-",
+    imgUrl4: "service-103.png",
+    imgUrl5: "service-104.png",
+    icon: <FaGripfire />,
+    title: "AGRICULTURE",
+
+    description:
+      "Satellite based farm management E-portal helps the farmer in making intelligent data driven smart decisions timely.",
   },
 ];
 
