@@ -88,7 +88,7 @@ class Team extends React.Component {
           {/* End Team Area  */}
 
           {/* Start Team Structure  */}
-          <div className="rn-team-wrapper ptb--120 bg_color--1">
+          {/* <div className="rn-team-wrapper ptb--120 bg_color--1">
             <div className="rn-team-area">
               <div className="container">
                 <div className="row">
@@ -107,7 +107,7 @@ class Team extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* End Team Area  */}
         </main>
         {/* End Page Wrapper  */}

@@ -55,12 +55,26 @@ class MainHeader extends Component {
           <div className="header-left inner">
             <div className="logo">
               <Link to="/">
-                <img
+                {/* <img
                   src="/assets/images/logo/logo.png"
                   alt="tech gis logo"
                   width="150px"
                   height="50px"
-                />
+                /> */}
+                <p
+                  style={{
+                    color: "white",
+                  }}
+                >
+                  Tech
+                  <span
+                    style={{
+                      color: "#2DAAC2",
+                    }}
+                  >
+                    GIS
+                  </span>
+                </p>
               </Link>
             </div>
           </div>

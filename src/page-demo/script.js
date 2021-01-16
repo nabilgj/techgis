@@ -158,7 +158,7 @@ export const SlideList = [
     bgImage: "bg_image--24",
     title: "Our Skilled Team!",
     description:
-      "We are a team of qualified with profound knowledge of Geo-Spatial Technology and Business.",
+      "We are a team of qualified professionals with profound knowledge of Geo-Spatial Technology and Business.",
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know GIS",
