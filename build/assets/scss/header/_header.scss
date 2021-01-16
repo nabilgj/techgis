@@ -91,7 +91,7 @@
       a {
         img {
           @media #{$sm-layout} {
-            width: 120px;
+            width: 60px;
           }
         }
       }
@@ -191,6 +191,7 @@
                   width: 0;
                   height: 3px;
                   background: $theme-color;
+
                   transition: 0.3s;
                   bottom: 0;
                 }
@@ -253,7 +254,7 @@
       .logo {
         a {
           img {
-            height: 50px;
+            height: 5px;
             color: white !important;
             &.logo-1 {
               display: none;
@@ -496,10 +497,12 @@
             }
             a {
               @media #{$md-layout} {
-                color: $heading-color;
+                // color: $heading-color;
+                color: white !important;
               }
               @media #{$sm-layout} {
-                color: $heading-color;
+                color: white !important;
+                // color: $heading-color;
               }
             }
           }
@@ -520,7 +523,8 @@
         visibility: visible;
         z-index: 9999;
         span {
-          color: $theme-color;
+          color: white;
+          // color: $theme-color;
           font-size: 30px;
           cursor: pointer;
         }

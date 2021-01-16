@@ -122,7 +122,7 @@ export const SlideList = [
     bgImage: "bg_image--21",
     title: "TechGIS",
     description:
-      "Technology based data companies will shape the future of our Planet. Syed Irtazah Ali",
+      "We cater technological requirements of the GNSS and Geo-Spatial Industry.",
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know GIS",
@@ -170,7 +170,7 @@ export const SlideList = [
     bgImage: "bg_image--25",
     title: "Seen Our Projects?",
     description:
-      " We have an unbending devotion to provide unparalleled services with integrity and full support.",
+      "Technology based data companies will shape the future of our Planet. Syed Irtazah Ali",
     buttonText: "Check Inside",
     buttonLink: "/services",
     techgisText: "Know GIS",
@@ -216,20 +216,27 @@ export const ServiceLists1 = [
     pro: [
       {
         id: 1,
-        p:
-          "Thermal Mapping of Wind Turbines, Towers, Solar Panels & Power Lines",
+        p: "Intelligent Aerial Spraying",
       },
       {
         id: 2,
-        p: "Rust Inspection of Towers, Turbines, Panels & Lines",
+        p: "Intelligent Aerial Spreading",
       },
       {
         id: 3,
-        p: "2D, 3D Drawing",
+        p: "Irrigation Management",
       },
       {
         id: 4,
-        p: "Monitoring & Surveillance for inspection",
+        p: "Crop Health Analysis",
+      },
+      {
+        id: 5,
+        p: "Pollination Services",
+      },
+      {
+        id: 6,
+        p: "Satellite based Crop Inspection",
       },
     ],
     description:
@@ -305,7 +312,7 @@ export const ServiceLists1 = [
       },
       {
         id: 3,
-        p: "Rust Inspection of metal assemblyt",
+        p: "Rust Inspection of metal assembly",
       },
       {
         id: 4,
