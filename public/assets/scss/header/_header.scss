@@ -31,10 +31,10 @@
       padding: 15px 0;
     }
     @media #{$md-layout} {
-      padding: 30px 0;
+      padding: 50px 0;
     }
     @media #{$lg-layout} {
-      padding: 30px 0;
+      padding: 50px 0;
     }
     .header-hamberger {
       display: flex;
@@ -91,7 +91,8 @@
       a {
         img {
           @media #{$sm-layout} {
-            width: 60px;
+            // width: 60px;
+            width: 120px;
           }
         }
       }
@@ -254,8 +255,13 @@
       .logo {
         a {
           img {
-            height: 5px;
+            height: 42px;
+            margin: 8px 0;
             color: white !important;
+            @media #{$large-mobile} {
+              height: 36px;
+              margin: 0;
+            }
             &.logo-1 {
               display: none;
             }

@@ -409,10 +409,12 @@ textarea:-ms-input-placeholder {
 
 [data-black-overlay]:before {
   background-color: #000;
+  // background-color: #000;
 }
 
 [data-white-overlay]:before {
   background-color: #000;
+  // background-color: #000;
 }
 
 @for $i from 1 through 10 {

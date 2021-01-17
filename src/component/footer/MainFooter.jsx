@@ -40,20 +40,26 @@ const MainFooter = () => {
             <div className="inner">
               <div className="logo text-center text-sm-left mb_sm--20">
                 <Link to="/">
-                  <p
+                  <img
+                    src="/assets/images/logo/logo1.png"
+                    alt="tech gis logo"
+                    width="150px"
+                    height="50px"
+                  />
+                  {/* <p
+                  style={{
+                    color: "white",
+                  }}
+                >
+                  Tech
+                  <span
                     style={{
-                      color: "white",
+                      color: "#2DAAC2",
                     }}
                   >
-                    Tech
-                    <span
-                      style={{
-                        color: "#2DAAC2",
-                      }}
-                    >
-                      GIS
-                    </span>
-                  </p>
+                    GIS
+                  </span>
+                </p> */}
                 </Link>
               </div>
             </div>
@@ -78,7 +84,7 @@ const MainFooter = () => {
           <div className="col-lg-4 col-md-12 col-sm-12 col-12">
             <div className="inner text-lg-right text-center mt_md--20 mt_sm--20">
               <div className="text">
-                <p>Copyright © 2020 TechGIS. All Rights Reserved.</p>
+                <p>Copyright © 2021 TechGIS. All Rights Reserved.</p>
               </div>
             </div>
           </div>

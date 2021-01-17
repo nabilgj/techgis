@@ -55,20 +55,12 @@ class ProjectsHeader extends Component {
           <div className="header-left">
             <div className="logo">
               <Link to="/">
-                <p
-                  style={{
-                    color: "white",
-                  }}
-                >
-                  Tech
-                  <span
-                    style={{
-                      color: "#2DAAC2",
-                    }}
-                  >
-                    GIS
-                  </span>
-                </p>
+                <img
+                  src="/assets/images/logo/logo1.png"
+                  alt="tech gis logo"
+                  width="150px"
+                  height="50px"
+                />
               </Link>
             </div>
           </div>
