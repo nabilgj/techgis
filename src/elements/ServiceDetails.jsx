@@ -4,7 +4,6 @@ import PageHelmet from "../component/common/Helmet";
 import ServicesHeader from "../component/header/ServicesHeader";
 import Breadcrumb from "../elements/common/Breadcrumb";
 
-import ModalVideo from "react-modal-video";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 
@@ -20,7 +19,7 @@ class ServiceDetails extends Component {
   constructor() {
     super();
 
-    this.menuTrigger = this.menuTrigger.bind(this);
+    // this.menuTrigger = this.menuTrigger.bind(this);
     // this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
     // this.stickyHeader = this.stickyHeader.bind(this);
 
@@ -34,9 +33,9 @@ class ServiceDetails extends Component {
     };
     this.openModal = this.openModal.bind(this);
   }
-  menuTrigger() {
+  menuTrigger = () => {
     document.querySelector(".header-wrapper").classList.toggle("menu-open");
-  }
+  };
   openModal() {
     this.setState({ isOpen: true });
   }
@@ -55,10 +54,6 @@ class ServiceDetails extends Component {
     const serviceList3 = ServiceLists3.filter(
       (serve) => serve.id === serviceID
     );
-
-    // const serviceListVideos = ServiceListVideos.filter(
-    //   (video) => video.id === serviceID
-    // );
 
     let bread1 = serviceID.split("-")[0];
     let bread2 = serviceID.split("-")[1];
@@ -96,8 +91,7 @@ class ServiceDetails extends Component {
                                 <img
                                   className="w-100"
                                   src={`/assets/images/service/${list.imgUrl}`}
-                                  // src="/assets/images/service/service-02.png"
-                                  alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
+                                  alt={`${list.imgAlt}`}
                                 />
                               </div>
                             </div>
@@ -149,7 +143,7 @@ class ServiceDetails extends Component {
                                 <img
                                   className="w-100"
                                   src={`/assets/images/service/${list.imgUrl4}`}
-                                  alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
+                                  alt={`${list.imgAlt}`}
                                 />
                               </div>
                             </div>
@@ -159,7 +153,7 @@ class ServiceDetails extends Component {
                                 <img
                                   className="w-100"
                                   src={`/assets/images/service/${list.imgUrl5}`}
-                                  alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
+                                  alt={`${list.imgAlt}`}
                                 />
                               </div>
                             </div>
@@ -192,7 +186,7 @@ class ServiceDetails extends Component {
                                 <img
                                   className="w-100"
                                   src={`/assets/images/service/${list.imgUrl2}`}
-                                  alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
+                                  alt={`${list.imgAlt12}`}
                                 />
                               </div>
                             </div>
@@ -202,7 +196,7 @@ class ServiceDetails extends Component {
                                 <img
                                   className="w-100"
                                   src={`/assets/images/service/${list.imgUrl3}`}
-                                  alt="A person operating a drone for techGIS in the middle of the crop field facing backwards to the camera."
+                                  alt={`${list.imgAlt13}`}
                                 />
                               </div>
                             </div>

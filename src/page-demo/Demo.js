@@ -15,7 +15,6 @@ import {
   slideSlick,
   SlideList,
 } from "../page-demo/script";
-import { render } from "react-dom";
 
 // project scrolling settings
 const settings = {
@@ -45,19 +44,19 @@ const renderLoader = () => <p>Loading</p>;
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.menuTrigger = this.menuTrigger.bind(this);
-    this.CloseMenuTrigger = this.CloseMenuTrigger.bind(this);
+    // this.menuTrigger = this.menuTrigger.bind(this);
+    // this.CloseMenuTrigger = this.CloseMenuTrigger.bind(this);
 
     window.addEventListener("load", function () {
       console.log("All assets are loaded");
     });
   }
-  menuTrigger() {
+  menuTrigger = () => {
     document.querySelector(".header-wrapper").classList.toggle("menu-open");
-  }
-  CloseMenuTrigger() {
+  };
+  CloseMenuTrigger = () => {
     document.querySelector(".header-wrapper").classList.remove("menu-open");
-  }
+  };
 
   render() {
     window.addEventListener("scroll", function () {
@@ -276,41 +275,43 @@ class Home extends Component {
           </div>
 
           <div className="wrapper portfolio-sacousel-inner mb--55">
-            <Link to="/projects">
-              <div className="portfolio-slick-activation mt--30 mt_sm--30">
-                <Slider {...projectSlick2} {...settings}>
-                  {ProjectList.map((value, index) => (
-                    <div
-                      className="portfolio portfolio-interior-design"
-                      key={index}
-                    >
-                      <div className="thumbnail-inner">
-                        <div
-                          className={`thumbnail ${value.image}`}
-                          style={{
-                            backgroundImage: `url(/assets/images/portfolio/${value.imageUrl}.jpg)`,
-                          }}
-                        ></div>
-                        <div className={`bg-blr-image ${value.image}`}></div>
-                      </div>
-                      <div className="content">
-                        <div className="inner">
-                          <p>{value.category}</p>
-                          <h4>
-                            <a href="#projects-in-progress">{value.title}</a>
-                          </h4>
-                          <div className="portfolio-button">
-                            <Link className="rn-button-style--3" to="/projects">
-                              Check
-                            </Link>
-                          </div>
+            {/* <Link to="/projects">
+
+            </Link> */}
+
+            <div className="portfolio-slick-activation mt--30 mt_sm--30">
+              <Slider {...projectSlick2} {...settings}>
+                {ProjectList.map((value, index) => (
+                  <div
+                    className="portfolio portfolio-interior-design"
+                    key={index}
+                  >
+                    <div className="thumbnail-inner">
+                      <div
+                        className={`thumbnail ${value.image}`}
+                        style={{
+                          backgroundImage: `url(/assets/images/portfolio/${value.imageUrl}.jpg)`,
+                        }}
+                      ></div>
+                      <div className={`bg-blr-image ${value.image}`}></div>
+                    </div>
+                    <div className="content">
+                      <div className="inner">
+                        <p>{value.category}</p>
+                        <h4>
+                          <Link to="#projects-in-progress">{value.title}</Link>
+                        </h4>
+                        <div className="portfolio-button">
+                          <Link className="rn-button-style--3" to="/projects">
+                            Check
+                          </Link>
                         </div>
                       </div>
                     </div>
-                  ))}
-                </Slider>
-              </div>
-            </Link>
+                  </div>
+                ))}
+              </Slider>
+            </div>
           </div>
         </div>
         {/* End projects */}

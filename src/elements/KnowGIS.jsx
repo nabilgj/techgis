@@ -1,9 +1,8 @@
 import React, { Component, lazy, Suspense } from "react";
-import { Link } from "react-router-dom";
 
 import PageHelmet from "../component/common/Helmet";
-import ModalVideo from "react-modal-video";
-import { FiClock, FiUser, FiMessageCircle, FiHeart } from "react-icons/fi";
+
+// import { FiClock, FiUser, FiMessageCircle, FiHeart } from "react-icons/fi";
 
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
@@ -62,10 +61,6 @@ class KnowGIS extends Component {
                         justifyContent: "center",
                       }}
                     >
-                      {/* <img
-                        src="/assets/images/blog/bl-big-01.jpg"
-                        alt="Blog Images"
-                      /> */}
                       <qoute
                         style={{
                           fontSize: "2.5rem",

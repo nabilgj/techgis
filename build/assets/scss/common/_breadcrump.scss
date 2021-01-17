@@ -12,11 +12,8 @@
   text-align: center;
   h2 {
     &.title {
-      background: #005e70;
-      background: linear-gradient(145deg, #005e70 0%, #2daac2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-
+      // background: #005e70;
+      color: white !important;
       font-size: 72px;
       @media #{$lg-layout} {
         font-size: 56px;

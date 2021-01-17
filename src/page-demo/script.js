@@ -184,6 +184,8 @@ export const ServiceLists1 = [
   {
     id: "utilities-",
     imgUrl: "service-01.jpg",
+    imgAlt:
+      "a transimission tower with the high voltage electric wires going through",
     icon: <FaKeycdn />,
     title: "UTILITIES",
     pro: [
@@ -211,6 +213,8 @@ export const ServiceLists1 = [
   {
     id: "agriculture-",
     imgUrl: "service-03.jpg",
+    imgAlt:
+      "a drone hovering over the crops and spraying over it and a tractor making its way as well.",
     icon: <FaGripfire />,
     title: "AGRICULTURE",
     pro: [
@@ -245,6 +249,7 @@ export const ServiceLists1 = [
   {
     id: "civil-infrastructure",
     imgUrl: "service-05.jpg",
+    imgAlt: "a nice landscape aerial view of the beautiful mountain and sky",
     icon: <FaHouzz />,
     title: "CIVIL & INFRASTRUCTURE",
     pro: [
@@ -299,6 +304,8 @@ export const ServiceLists1 = [
   {
     id: "ports-shipping",
     imgUrl: "service-07.jpg",
+    imgAlt:
+      "anther aerial view of the port where containers are being up & offloaded to and from the ships",
     icon: <FaDocker />,
     title: "PORTS & SHIPPING AND OIL & GAS",
     pro: [
@@ -329,6 +336,8 @@ export const ServiceLists1 = [
   {
     id: "mining-exploration",
     imgUrl: "service-09.jpg",
+    imgAlt:
+      "inside mining tunnel where the rail track can be seen with the lights fixed on the left side of the tunnel.",
     icon: <FaPiedPiperAlt />,
     title: "MINING & EXPLORATION",
     pro: [
@@ -359,6 +368,7 @@ export const ServiceLists1 = [
   {
     id: "environment-management",
     imgUrl: "service-11.jpg",
+    imgAlt: "view of the top part of the trees",
     icon: <FaAirFreshener />,
     title: "ENVIRONMENT MANAGEMENT",
     pro: [
@@ -398,6 +408,8 @@ export const ServiceLists2 = [
     id: "utilities-",
     imgUrl2: "service-101.png",
     imgUrl3: "service-102.png",
+    imgAlt12: "flow chart of the data acquisition of utilities",
+    imgAlt13: "data processing and product development of utilities",
     icon: <FaKeycdn />,
     title: "UTILITIES",
     description:
@@ -407,6 +419,8 @@ export const ServiceLists2 = [
     id: "agriculture-",
     imgUrl2: "service-101.png",
     imgUrl3: "service-102.png",
+    imgAlt12: "flow chart of the data acquisition of agriculture",
+    imgAlt13: "data processing and product development of agriculture",
     icon: <FaGripfire />,
     title: "AGRICULTURE",
 
@@ -417,6 +431,8 @@ export const ServiceLists2 = [
     id: "civil-infrastructure",
     imgUrl2: "service-101.png",
     imgUrl3: "service-102.png",
+    imgAlt12: "flow chart of the data acquisition of civil-infrastructure",
+    imgAlt13: "data processing and product development of civil-infrastructure",
     icon: <FaHouzz />,
     title: "CIVIL & INFRASTRUCTURE",
 
@@ -427,6 +443,11 @@ export const ServiceLists2 = [
     id: "ports-shipping",
     imgUrl2: "service-101.png",
     imgUrl3: "service-102.png",
+    imgAlt12:
+      "flow chart of the data acquisition of ports & shipping and oil & gas",
+    imgAlt13:
+      "data processing and product development of ports & shipping and oil & gas",
+
     icon: <FaDocker />,
     title: "PORTS & SHIPPING AND OIL & GAS",
 
@@ -437,6 +458,8 @@ export const ServiceLists2 = [
     id: "mining-exploration",
     imgUrl2: "service-101.png",
     imgUrl3: "service-102.png",
+    imgAlt12: "flow chart of the data acquisition of mining & exploration",
+    imgAlt13: "data processing and product development of mining & exploration",
     icon: <FaPiedPiperAlt />,
     title: "MINING & EXPLORATION",
 
@@ -447,6 +470,9 @@ export const ServiceLists2 = [
     id: "environment-management",
     imgUrl2: "service-101.png",
     imgUrl3: "service-102.png",
+    imgAlt12: "flow chart of the data acquisition of environment & management",
+    imgAlt13:
+      "data processing and product development of environment & management",
     icon: <FaAirFreshener />,
     title: "ENVIRONMENT MANAGEMENT",
     description:
@@ -459,6 +485,7 @@ export const ServiceLists3 = [
     id: "agriculture-",
     imgUrl4: "service-103.png",
     imgUrl5: "service-104.png",
+    imgAlt: "processing of farm management for agriculture sector",
     icon: <FaGripfire />,
     title: "AGRICULTURE",
 

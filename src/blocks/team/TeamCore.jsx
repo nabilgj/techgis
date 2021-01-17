@@ -1,6 +1,6 @@
 import React from "react";
 import teamCore from "./data";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
@@ -24,31 +24,31 @@ const TeamCore = (props) => {
             </div>
             <ul className="social-icon">
               <li>
-                <NavLink
-                  to={`${value.facebook}`}
+                <a
+                  href={`${value.facebook}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaFacebookF />
-                </NavLink>
+                </a>
               </li>
               <li>
-                <NavLink
-                  to={`${value.linkedin}`}
+                <a
+                  href={`${value.linkedin}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedinIn />
-                </NavLink>
+                </a>
               </li>
               <li>
-                <NavLink
-                  to={`${value.twitter}`}
+                <a
+                  href={`${value.twitter}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaTwitter />
-                </NavLink>
+                </a>
               </li>
             </ul>
           </div>

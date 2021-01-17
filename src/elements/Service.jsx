@@ -15,7 +15,7 @@ import { ServiceLists1 } from "../page-demo/script";
 class Service extends Component {
   constructor(props) {
     super(props);
-    this.menuTrigger = this.menuTrigger.bind(this);
+    // this.menuTrigger = this.menuTrigger.bind(this);
     // this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
     // this.stickyHeader = this.stickyHeader.bind(this);
 
@@ -24,9 +24,9 @@ class Service extends Component {
       console.log("All assets are loaded");
     });
   }
-  menuTrigger() {
+  menuTrigger = () => {
     document.querySelector(".header-wrapper").classList.toggle("menu-open");
-  }
+  };
   render() {
     return (
       <React.Fragment>
