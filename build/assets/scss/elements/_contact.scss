@@ -28,6 +28,12 @@
   textarea {
     height: 120px;
   }
+
+  .submitButton:disabled {
+    cursor: not-allowed;
+    background: #222;
+    outline: none;
+  }
 }
 
 /*==========================
