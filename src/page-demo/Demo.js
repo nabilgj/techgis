@@ -59,6 +59,9 @@ class Home extends Component {
   };
 
   render() {
+    const API_KEY = `${process.env}`;
+    console.log("api", API_KEY);
+
     window.addEventListener("scroll", function () {
       var value = window.scrollY;
       if (value > 50) {
