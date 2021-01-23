@@ -1,4 +1,5 @@
 export default {
-  USER_ID: "user_eFi76XjcUUnuWif3ZLsoz",
-  TEMPLATE_ID: "template_xba36sd",
+  USER_ID: "user_VRfxVv8Ci2Mfu7D5LBHmZ",
+  TEMPLATE_ID: "template_iyi8661",
+  SERVICE_ID: "gmail",
 };

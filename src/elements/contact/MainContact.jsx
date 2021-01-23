@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+
 import emailjs from "emailjs-com";
 
 import Snackbar from "@material-ui/core/Snackbar";
 import Loader from "../Loader";
 
-import apiKeys from "../../apikeys";
+import apiKeys from "../../../config.json";
 
 const MainContact = (props) => {
   const [name, setName] = useState("");
@@ -66,7 +66,12 @@ const MainContact = (props) => {
     setIsBusy(true);
 
     emailjs
-      .sendForm("gmail", apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
+      .sendForm(
+        apiKeys.SERVICE_ID,
+        apiKeys.TEMPLATE_ID,
+        e.target,
+        apiKeys.USER_ID
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -142,7 +147,7 @@ const MainContact = (props) => {
         <div className="row row--35 align-items-start">
           <div className="col-lg-6 order-2 order-lg-1">
             <div className="section-title text-left mb--50">
-              <h2 className="title"> Contact Us </h2>
+              <h2 className="title"> Send Us Your Inquiry </h2>
             </div>
             <div className="form-wrapper">
               <form onSubmit={onFormSubmitted}>
@@ -154,6 +159,7 @@ const MainContact = (props) => {
                     value={name}
                     onChange={onChanged}
                     placeholder="Your Name"
+                    required
                   />
                 </label>
 
@@ -165,6 +171,7 @@ const MainContact = (props) => {
                     value={email}
                     onChange={onChanged}
                     placeholder="Your Email"
+                    required
                   />
                 </label>
 
