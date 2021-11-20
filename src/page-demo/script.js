@@ -30,6 +30,7 @@ export const portfolioSlick = {
   ],
 };
 
+// into demo for sliding projects on home page
 export const projectSlick2 = {
   infinite: true,
   slidesToShow: 5,
